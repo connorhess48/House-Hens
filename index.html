@@ -3,49 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House Hens - Professional Cleaning Services</title>
+    <title>House Hens</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="branding">
-                <h1>House Hens</h1>
-                <p>Professional Cleaning Services Since 1992</p>
-            </div>
-            <div class="contact-info">
-                <p>Email: <a href="mailto:reds2270@yahoo.com">reds2270@yahoo.com</a></p>
-                <p>Office: <a href="tel:6104943098">(610) 494-3098</a></p>
-                <p>Cell: <a href="tel:6102205225">(610) 220-5225</a></p>
-            </div>
-        </div>
-    </header>
-
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="our_services.html">Our Services</a></li>
-                <li><a href="estimates.html">Estimates</a></li>
-                <li><a href="contact_us.html">Contact Us</a></li>
-            </ul>
-        </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">House Hens</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#estimates">Estimates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <!-- Main Content -->
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h2>If a neat nest is on your mind, the team from House Hens is a perfect find!</h2>
-                <p>Serving Delaware and Chester County since 1992, we are a family-owned business dedicated to providing efficient, reliable cleaning with an emphasis on quality.</p>
-                <a href="our_services.html" class="btn">Learn More About Our Services</a>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <h1>Welcome to House Hens</h1>
+        <p>Your trusted partner for home services.</p>
+        <a href="#services" class="cta">Explore Services</a>
+    </header>
 
-        <section class="about">
-            <div class="container">
-                <h2>About Us</h2>
-                <p>House Hens has been serving Delaware and Chester County since 1992. We are a family-owned business, and we still clean the homes of many of our original clients. Our trademark is care and consideration. House Hens repeatedly de
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Service 1</h3>
+                <p>High-quality service tailored to your needs.</p>
+            </div>
+            <div class="service-card">
+                <h3>Service 2</h3>
+                <p>Efficient and affordable solutions.</p>
+            </div>
+            <div class="service-card">
+                <h3>Service 3</h3>
+                <p>Professional and reliable support.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estimates Section -->
+    <section id="estimates" class="section">
+        <h2>Get a Free Estimate</h2>
+        <p>Contact us today for a free and no-obligation estimate.</p>
+        <form class="estimate-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Email: contact@househens.com</p>
+        <p>Phone: (555) 555-5555</p>
+        <p>Address: 123 Main Street, Hometown, USA</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 House Hens. All rights reserved.</p>
+    </footer>
+</body>
+</html>
 
