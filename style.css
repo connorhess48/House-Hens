@@ -74,8 +74,7 @@ a:hover {
     text-align: center;
     padding: 8rem 2rem;
     margin-top: 60px;  /* Offset for fixed navbar */
-    background: url('Cleaning_lady.jpg') no-repeat center center / cover;
-    background-position: center 20%; /* Adjust if needed for subject's face */
+    background: url('cribclean.jpg') no-repeat center center / cover;
     color: #fff;
     position: relative;
     overflow: hidden;
