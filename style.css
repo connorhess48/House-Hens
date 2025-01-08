@@ -65,7 +65,7 @@ a:hover {
 .hero {
     text-align: center;
     padding: 8rem 2rem;
-    background: url('Cleaning_lady.jpg') no-repeat center center / cover; 
+    background: url('cribclean.jpg') no-repeat center center / cover; 
     /* Keep the hero image in CSS, as per your original code */
     background-position: center 20%; /* Adjust if needed to ensure subject's face is visible */
     color: #fff;
