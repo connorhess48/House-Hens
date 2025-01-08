@@ -76,7 +76,7 @@ a:hover {
     margin-top: 60px; /* Offset for fixed navbar */
 
     /* Changed from "cover" to "contain" to avoid extreme horizontal scaling */
-    background: url('Cleaning_lady.jpg') no-repeat center center;
+    background: url('cribclean.jpg') no-repeat center center;
     background-size: contain; 
     background-color: #f2f2f2; /* Fallback color behind the image */
 
