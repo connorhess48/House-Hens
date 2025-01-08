@@ -65,7 +65,7 @@ a:hover {
 .hero {
     text-align: center;
     padding: 8rem 2rem;
-    background: url('big_image.jpg') no-repeat center center/cover; /* Display the full image */
+    background: url('Cleaning_lady.jpg') no-repeat center center/cover; /* Display the full image */
     background-position: center 20%; /* Adjust vertical alignment to include the subject's face */
     color: #fff;
     margin-top: 60px; /* Offset for fixed navbar */
