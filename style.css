@@ -91,7 +91,7 @@ a:hover {
        and remains sharp. 
     */
     background: url('cribclean.jpg') no-repeat center center;
-    background-size: contain;
+    background-size: cover;
     background-color: #fff; /* Visible if there's empty space around the image */
 
     color: #fff;
