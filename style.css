@@ -1,14 +1,23 @@
 /* General Styles */
 body {
-    background-color: #fff;       /* White background for a bright, modern look */
-    color: #333;                  /* Dark text for contrast on white */
+    /* Light background for a bright, modern look (similar to CarCandy) */
+    background-color: #fff;
+    color: #333;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+body {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Links */
 a {
-    color: #dd4632;               /* Red accent color (similar to CarCandy) */
+    color: #dd4632; /* Red accent color reminiscent of CarCandy */
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -23,7 +32,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #000;       /* Black nav bar for bold contrast */
+    background-color: #000; /* Black nav bar for bold contrast */
     position: fixed;
     width: 100%;
     top: 0;
@@ -33,8 +42,7 @@ a:hover {
 .navbar .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #dd4632;               /* Red accent for the logo text */
-    font-family: 'Poppins', sans-serif;
+    color: #dd4632; /* Red accent for the logo text */
 }
 
 .nav-links {
@@ -52,24 +60,40 @@ a:hover {
 }
 
 .nav-links a {
-    color: #fff;                  /* White nav links */
+    color: #fff; /* White nav links */
     font-weight: bold;
-    font-family: 'Poppins', sans-serif;
 }
 
 .nav-links a:hover {
-    color: #dd4632;               /* Red on hover */
+    color: #dd4632; /* Red on hover */
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
+    /* We’re limiting height so the image doesn’t stretch too tall */
     padding: 8rem 2rem;
-    background: url('cribclean.jpg') no-repeat center center / cover; 
-    /* Keep the hero image in CSS, as per your original code */
-    background-position: center 20%; /* Adjust if needed to ensure subject's face is visible */
+    margin-top: 60px; /* Offset for fixed navbar */
+
+    /* Changed from "cover" to "contain" to avoid extreme horizontal scaling */
+    background: url('Cleaning_lady.jpg') no-repeat center center;
+    background-size: contain; 
+    background-color: #f2f2f2; /* Fallback color behind the image */
+
     color: #fff;
-    margin-top: 60px;  /* Offset for fixed navbar */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Optional: If you want the hero text narrower (like CarCandy’s margins),
+ * add max-width to the text elements. */
+.hero h1,
+.hero p,
+.hero .cta {
+    max-width: 800px;   /* or 1200px, adjust to your preference */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .hero h1 {
@@ -87,19 +111,18 @@ a:hover {
 .cta {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background-color: #dd4632;     /* Red accent button */
+    background-color: #dd4632; /* Red accent button */
     color: #fff;
     font-weight: bold;
     border-radius: 5px;
     transition: background 0.3s;
-    font-family: 'Poppins', sans-serif;
 }
 
 .cta:hover {
-    background-color: #b63724;     /* Darker red on hover */
+    background-color: #b63724; /* Darker red on hover */
 }
 
-/* Section Styles (if you use any .section class) */
+/* Section Styles (if used) */
 .section {
     padding: 3rem 2rem;
     text-align: center;
@@ -112,7 +135,7 @@ a:hover {
 
 /* Footer */
 footer {
-    background-color: #111;        /* Dark footer */
+    background-color: #111; /* Dark footer */
     color: #fff;
     text-align: center;
     padding: 2rem 0;
@@ -124,8 +147,7 @@ footer {
 .footer-content h3 {
     margin-bottom: 1rem;
     font-size: 1.5rem;
-    font-family: 'Poppins', sans-serif;
-    color: #dd4632;               /* Red accent in footer heading */
+    color: #dd4632; /* Red accent in footer heading */
 }
 
 .footer-content p {
@@ -140,5 +162,3 @@ footer {
 .footer-content a:hover {
     text-decoration: underline;
 }
-
-
