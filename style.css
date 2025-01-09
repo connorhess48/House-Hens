@@ -1,160 +1,146 @@
-/* =========================================
-   1) BODY & PAGE WRAP
-   - Black body for margins
-   - White .page-wrap centered
-========================================= */
+/* 
+  House Hens - Final "Best Practice" CSS
+  - White body background (no black margins)
+  - A single high-resolution hero image with "cover"
+  - Mobile-friendly layout (no forced large widths)
+*/
+
+/* GENERAL RESET/STYLES */
 body {
-    background-color: #000;  /* Black margins */
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+  background-color: #fff;       /* White page background */
+  color: #333;                  /* Dark text for good contrast on white */
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.page-wrap {
-    background-color: #fff;  /* White content area */
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    min-height: 100vh;
-    color: #333;
-}
-
-/* =========================================
-   2) LINKS & GENERAL
-========================================= */
+/* LINKS */
 a {
-    color: #dd4632;  /* Red accent */
-    text-decoration: none;
-    transition: color 0.3s;
+  color: #dd4632;              /* Red accent color */
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* =========================================
-   3) NAVBAR (full-width, fixed)
-========================================= */
+/* NAVBAR */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #000;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000;       /* Black nav bar for strong contrast */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
-.navbar .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #dd4632; /* Red accent for the logo text */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #dd4632;              /* Red accent for the logo */
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    flex: 1;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
-    flex: 1;
-    text-align: center;
+  margin-left: 2rem;           /* Space between links */
 }
 
 .nav-links a {
-    color: #fff; /* White nav links */
-    font-weight: bold;
+  color: #fff;                 /* White nav links */
+  font-weight: bold;
 }
 
 .nav-links a:hover {
-    color: #dd4632;
+  color: #dd4632;              /* Red on hover */
 }
 
-/* =========================================
-   4) HERO SECTION
-   - Uses "cover" to fill area with a high-res image
-   - Height set to 80vh to scale with viewport
-========================================= */
+/* HERO SECTION */
 .hero {
-    display: flex;                /* Centers contents vertically/horizontally */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;               /* Centers content vertically/horizontally */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    text-align: center;
-    margin-top: 60px;             /* Offset for fixed navbar */
+  margin-top: 60px;            /* Offset for fixed navbar */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 
-    /* Replace with your high-res image name */
-    background: url('cribclean.jpg') no-repeat center center;
-    background-size: cover;
-    background-position: center;
+  /* 
+    Replace 'cribclean-highres.jpg' with 
+    your actual large-resolution file
+  */
+  background: url('cribclean-highres.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
 
-    height: 80vh;                 /* Hero takes 80% of viewport height */
-    color: #fff;
-    position: relative;
-    overflow: hidden;
+  /* Hero occupies 80% of the viewport height */
+  height: 80vh;
+  color: #fff;                 /* White text for a dark or busy background */
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
-/* Smaller "Explore Services" Button */
+/* CTA BUTTON */
 .cta {
-    display: inline-block;
-    padding: 0.4rem 1rem;   /* Smaller button dimensions */
-    font-size: 0.9rem;
-    background-color: #dd4632;
-    color: #fff;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background 0.3s;
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  background-color: #dd4632;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
 .cta:hover {
-    background-color: #b63724;
+  background-color: #b63724;
 }
 
-/* =========================================
-   5) FOOTER
-========================================= */
+/* FOOTER */
 footer {
-    background-color: #111;
-    color: #fff;
-    text-align: center;
-    padding: 2rem 0;
+  background-color: #111;       /* Dark footer */
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
 }
 
 .footer-content h3 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    color: #dd4632;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #dd4632;
 }
 
 .footer-content p {
-    margin: 0.5rem 0;
+  margin: 0.5rem 0;
 }
 
 .footer-content a {
-    color: #dd4632;
-    text-decoration: none;
+  color: #dd4632;
+  text-decoration: none;
 }
 
 .footer-content a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
