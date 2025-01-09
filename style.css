@@ -11,7 +11,7 @@ body {
 }
 
 .page-wrap {
-    background-color: #fff;     /* White content area */
+    background-color: #fff;  /* White content area */
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -40,7 +40,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #000;  /* Black nav bar */
+    background-color: #000;
     position: fixed;
     width: 100%;
     top: 0;
@@ -78,45 +78,37 @@ a:hover {
 
 /* =========================================
    4) HERO SECTION
-   - "contain" so image won't stretch bigger
-   - fixed width/height matching or below
-     the actual image resolution
+   - Uses "cover" to fill area with a high-res image
+   - Height set to 80vh to scale with viewport
 ========================================= */
 .hero {
-    text-align: center;
-    margin: 60px auto 0;   /* Center .hero horizontally, offset for nav */
+    display: flex;                /* Centers contents vertically/horizontally */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    /* 
-       Use contain so the image never stretches beyond native resolution 
-       and remains sharp. 
-    */
+    text-align: center;
+    margin-top: 60px;             /* Offset for fixed navbar */
+
+    /* Replace with your high-res image name */
     background: url('cribclean.jpg') no-repeat center center;
     background-size: cover;
-    background-color: #fff; /* Visible if there's empty space around the image */
+    background-position: center;
 
+    height: 80vh;                 /* Hero takes 80% of viewport height */
     color: #fff;
     position: relative;
     overflow: hidden;
-
-    /* 
-       Adjust these dimensions to match or be a bit smaller 
-       than your actual cribclean.jpg resolution. 
-       Example: if cribclean.jpg is 1200px wide & 800px tall:
-    */
-    width: 1200px;     /* Limit the max width to avoid scaling bigger */
-    max-width: 100%;   /* Let it shrink on smaller screens */
-    height: 800px;     /* Match image's aspect ratio */
 }
 
 .hero h1 {
-    font-size: 2rem;
-    margin-top: 2rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .hero p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
@@ -124,7 +116,7 @@ a:hover {
 /* Smaller "Explore Services" Button */
 .cta {
     display: inline-block;
-    padding: 0.4rem 1rem;
+    padding: 0.4rem 1rem;   /* Smaller button dimensions */
     font-size: 0.9rem;
     background-color: #dd4632;
     color: #fff;
@@ -141,7 +133,7 @@ a:hover {
    5) FOOTER
 ========================================= */
 footer {
-    background-color: #111; /* Dark footer */
+    background-color: #111;
     color: #fff;
     text-align: center;
     padding: 2rem 0;
