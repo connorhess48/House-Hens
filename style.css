@@ -1,29 +1,13 @@
-/* =========================================
-   1) BODY & PAGE WRAP
-   - Black body for margins
-   - White .page-wrap centered
-========================================= */
+/* General Styles */
 body {
-    background-color: #000;  /* Black margins */
+    background-color: #000; /* Black background for body */
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
-.page-wrap {
-    background-color: #fff;  /* White content area */
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    min-height: 100vh;
-    color: #333;
-}
-
-/* =========================================
-   2) LINKS & GENERAL
-========================================= */
 a {
-    color: #dd4632;  /* Red accent */
+    color: #dd4632; /* Red accent */
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -32,9 +16,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* =========================================
-   3) NAVBAR (full-width, fixed)
-========================================= */
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -50,7 +32,7 @@ a:hover {
 .navbar .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #dd4632; /* Red accent for the logo text */
+    color: #dd4632;
 }
 
 .nav-links {
@@ -74,31 +56,38 @@ a:hover {
 
 .nav-links a:hover {
     color: #dd4632;
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
 }
 
-/* =========================================
-   4) HERO SECTION
-   - Uses "cover" to fill area with a high-res image
-   - Height set to 80vh to scale with viewport
-========================================= */
+/* Hero Section */
 .hero {
-    display: flex;                /* Centers contents vertically/horizontally */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-    margin-top: 60px;             /* Offset for fixed navbar */
-
-    /* Replace with your high-res image name */
-    background: url('CleanHouse.jpg') no-repeat center center;
-    background-size: cover;
-    background-position: center;
-
-    height: 80vh;                 /* Hero takes 80% of viewport height */
-    color: #fff;
     position: relative;
-    overflow: hidden;
+    background: url('CleanHouse.jpg') no-repeat center center/cover; /* High-resolution image */
+    color: #fff;
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
 }
 
 .hero h1 {
@@ -110,14 +99,11 @@ a:hover {
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
-/* Smaller "Explore Services" Button */
 .cta {
     display: inline-block;
-    padding: 0.4rem 1rem;   /* Smaller button dimensions */
-    font-size: 0.9rem;
+    padding: 0.75rem 1.5rem;
     background-color: #dd4632;
     color: #fff;
     font-weight: bold;
@@ -129,9 +115,7 @@ a:hover {
     background-color: #b63724;
 }
 
-/* =========================================
-   5) FOOTER
-========================================= */
+/* Footer */
 footer {
     background-color: #111;
     color: #fff;
