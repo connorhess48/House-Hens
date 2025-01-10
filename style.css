@@ -236,8 +236,7 @@ a:hover {
     background-position: center;
     border-radius: 8px;
     overflow: hidden;
-    padding-top: 2rem; /* Add space above the description */
-    padding-bottom: 2rem; /* Add space below the description */
+    height: 400px; /* Ensure consistent photo dimensions */
 }
 
 /* Dark Grey Square Above Photo */
@@ -256,16 +255,14 @@ a:hover {
 
 /* Description Text */
 .service-overlay {
-    position: relative;
+    position: absolute;
+    bottom: 0; /* Anchor the text to the bottom of the section */
     width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
     color: #ffffff; /* White text for descriptions */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    padding: 2rem; /* Ensure proper spacing for text */
-    min-height: 200px; /* Allow space for longer descriptions */
+    padding: 1rem; /* Padding for description text */
+    box-sizing: border-box; /* Ensure padding doesn’t affect dimensions */
 }
 
 .service-overlay p {
@@ -274,29 +271,22 @@ a:hover {
     line-height: 1.6; /* Improved readability */
     max-width: 90%; /* Ensure text wraps within the section */
     word-wrap: break-word; /* Force text to wrap when needed */
+    margin: 0 auto; /* Center-align text block */
 }
 
 /* Background Images for Each Service */
 #general-cleaning {
     background-image: url('General.jpg');
-    height: auto; /* Allow height to grow dynamically */
-    min-height: 300px; /* Ensure a minimum height */
 }
 
 #delightful-detail {
     background-image: url('Cobwebs.jpg');
-    height: auto; /* Allow height to grow dynamically */
-    min-height: 300px;
 }
 
 #deluxe-detail {
     background-image: url('WashingBaseboards.jpg');
-    height: auto; /* Allow height to grow dynamically */
-    min-height: 300px;
 }
 
 #window-washing {
     background-image: url('WindowCleaning.jpg');
-    height: auto; /* Allow height to grow dynamically */
-    min-height: 300px;
 }
