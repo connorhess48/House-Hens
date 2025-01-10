@@ -160,3 +160,91 @@ a:hover {
     margin: 0.5rem 0;
 }
 
+/* Estimates Page Styles */
+.estimates-content {
+    max-width: 800px;
+    margin: 100px auto 50px; /* Adjusted for fixed navbar */
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.estimates-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #dd4632;
+}
+
+.estimates-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.estimate-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.estimate-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #dd4632;
+}
+
+.estimate-card p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.estimate-card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+
+
+::contentReference[oaicite:.estimate-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    
+::contentReference[oaicite:text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.estimate-card h2 {
+    font-size: 1.8rem;
+    
+::contentReference[oaicite:margin-bottom: 0.5rem;
+    color: #dd4632;
+}
+
+
+}
+
+.
+::contentReference[oaicite:.estimate-card p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.estimate-card .price {
+    font-size: 
+::contentReference[oaicite:1.2rem;
+    font-weight: bold;
+    
+    co
+::contentReference[oaicite:
+::contentReference[oaicite:color: #000;
+}
+
