@@ -239,19 +239,19 @@ a:hover {
     overflow: hidden;
 }
 
-/* Dark Square for Section Header */
+/* Dark Square Above Photo */
 .service-header {
     width: 100%; /* Match the photo width */
-    background-color: rgba(0, 0, 0, 0.9); /* Dark black background */
-    color: #dd4632; /* Red text for service titles */
+    background-color: #000; /* Solid black for the header */
+    color: #dd4632; /* Red text for section titles */
     text-align: center;
-    padding: 1rem 0;
-    margin-bottom: -2px; /* Align flush with the photo */
+    padding: 1rem 0; /* Padding for the header */
+    margin-bottom: -2px; /* Ensure alignment with the photo */
 }
 
 .service-header h2 {
     font-size: 1.8rem;
-    margin: 0; /* Remove default margin */
+    margin: 0; /* Remove default margin for centering */
 }
 
 /* Description Text */
