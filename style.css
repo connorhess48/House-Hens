@@ -231,7 +231,7 @@ a:hover {
 .service {
     position: relative;
     margin-bottom: 2rem;
-    background-size: cover; /* Fill the section without stretching */
+    background-size: contain; /* Ensure the entire image is visible */
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 8px;
@@ -239,6 +239,7 @@ a:hover {
     flex-direction: column;
     height: auto; /* Let height adjust dynamically */
     min-height: 400px; /* Ensure a minimum height for smaller descriptions */
+    overflow: hidden; /* Prevent content overflow */
 }
 
 /* Dark Grey Square Above Photo */
