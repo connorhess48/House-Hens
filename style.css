@@ -231,8 +231,7 @@ a:hover {
 /* Service Section Styles */
 .service {
     position: relative;
-    height: auto; /* Allow height to adjust to content */
-    min-height: 300px; /* Ensure a minimum height */
+    min-height: 300px; /* Ensure a minimum height for the photo */
     margin-bottom: 2rem;
     background-size: cover;
     background-position: center;
@@ -240,36 +239,40 @@ a:hover {
     overflow: hidden;
 }
 
+/* Dark Square for Section Header */
+.service-header {
+    width: 100%; /* Match the photo width */
+    background-color: rgba(0, 0, 0, 0.9); /* Dark black background */
+    color: #dd4632; /* Red text for service titles */
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: -2px; /* Align flush with the photo */
+}
+
+.service-header h2 {
+    font-size: 1.8rem;
+    margin: 0; /* Remove default margin */
+}
+
+/* Description Text */
 .service-overlay {
     position: relative;
     width: 100%;
-    max-width: 90%; /* Limit width for wrapping */
-    margin: 0 auto;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
-    color: #fff;
+    color: #fff; /* White text for descriptions */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 2rem; /* Increased padding for better spacing */
-}
-
-.service-overlay h2 {
-    font-size: 2rem; /* Slightly larger for emphasis */
-    color: #dd4632; /* Red color for service titles */
-    margin-bottom: 1rem; /* Added spacing below the title */
-    text-align: center;
-    word-wrap: break-word; /* Prevent overflow */
+    padding: 2rem; /* Ensure proper spacing inside the section */
 }
 
 .service-overlay p {
     font-size: 1rem;
-    color: #f8f8f8; /* Off-white for better contrast */
     margin: 0;
     line-height: 1.6; /* Improved readability */
-    max-width: 90%; /* Ensure text wraps before touching edges */
-    word-wrap: break-word; /* Force text to wrap */
+    max-width: 90%; /* Ensure text wraps within the section */
+    word-wrap: break-word; /* Force text to wrap when needed */
 }
 
 /* Background Images for Each Service */
