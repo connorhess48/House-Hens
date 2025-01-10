@@ -237,9 +237,8 @@ a:hover {
     border-radius: 8px;
     display: flex; /* Flexbox for text alignment */
     flex-direction: column;
-    height: auto; /* Let height adjust dynamically */
-    min-height: 400px; /* Ensure a minimum height for smaller descriptions */
-    overflow: hidden; /* Prevent content overflow */
+    width: 100%; /* Ensure full width */
+    min-height: 400px; /* Minimum height to preserve layout consistency */
 }
 
 /* Dark Grey Square Above Photo */
@@ -258,13 +257,15 @@ a:hover {
 
 /* Description Text */
 .service-overlay {
-    position: relative;
-    width: 100%;
+    position: absolute; /* Position overlay within the container */
+    bottom: 0; /* Anchor to the bottom of the container */
+    left: 0;
+    right: 0;
     color: #ffffff; /* Ensure text remains white */
     text-align: center;
-    padding: 2rem; /* Add spacing for longer text */
+    padding: 2rem; /* Add spacing for text */
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
-    box-sizing: border-box; /* Ensure padding doesn’t affect dimensions */
+    box-sizing: border-box; /* Include padding in width/height */
 }
 
 .service-overlay p {
@@ -292,3 +293,4 @@ a:hover {
 #window-washing {
     background-image: url('WindowCleaning.jpg');
 }
+
