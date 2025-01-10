@@ -256,7 +256,7 @@ a:hover {
 .service-overlay {
     position: relative;
     width: 100%;
-    color: #ffffff; /* White text for descriptions */
+    color: #fff; /* White text for descriptions */
     text-align: center;
     padding: 2rem; /* Add spacing for longer text */
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
