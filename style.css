@@ -225,7 +225,7 @@ a:hover {
 .services-content p {
     font-size: 1rem;
     margin-bottom: 2rem;
-    color: #333;
+    color: #fff;
 }
 
 /* Service Section Styles */
@@ -256,7 +256,7 @@ a:hover {
 .service-overlay {
     position: relative;
     width: 100%;
-    color: #fff; /* White text for descriptions */
+    color: #ffffff; /* White text for descriptions */
     text-align: center;
     padding: 2rem; /* Add spacing for longer text */
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
