@@ -143,12 +143,12 @@ a:hover {
 }
 
 .footer-section a {
-    color: #dd4632;
+    color: #fff;
     text-decoration: none;
 }
 
 .footer-section a:hover {
-    text-decoration: underline;
+    color: #dd4632;
 }
 
 .footer-nav-links {
