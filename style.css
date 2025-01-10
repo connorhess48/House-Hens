@@ -231,22 +231,22 @@ a:hover {
 /* Service Section Styles */
 .service {
     position: relative;
-    min-height: 300px; /* Ensure a minimum height for the photo */
     margin-bottom: 2rem;
     background-size: cover;
     background-position: center;
     border-radius: 8px;
     overflow: hidden;
+    padding-top: 2rem; /* Add space above the description */
+    padding-bottom: 2rem; /* Add space below the description */
 }
 
-/* Dark Square Above Photo */
+/* Dark Grey Square Above Photo */
 .service-header {
     width: 100%; /* Match the photo width */
-    background-color: #000; /* Solid black for the header */
+    background-color: #333333; /* Dark grey for visibility */
     color: #dd4632; /* Red text for section titles */
     text-align: center;
     padding: 1rem 0; /* Padding for the header */
-    margin-bottom: -2px; /* Ensure alignment with the photo */
 }
 
 .service-header h2 {
@@ -258,13 +258,14 @@ a:hover {
 .service-overlay {
     position: relative;
     width: 100%;
-    color: #fff; /* White text for descriptions */
+    color: #ffffff; /* White text for descriptions */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 2rem; /* Ensure proper spacing inside the section */
+    padding: 2rem; /* Ensure proper spacing for text */
+    min-height: 200px; /* Allow space for longer descriptions */
 }
 
 .service-overlay p {
@@ -278,16 +279,24 @@ a:hover {
 /* Background Images for Each Service */
 #general-cleaning {
     background-image: url('General.jpg');
+    height: auto; /* Allow height to grow dynamically */
+    min-height: 300px; /* Ensure a minimum height */
 }
 
 #delightful-detail {
     background-image: url('Cobwebs.jpg');
+    height: auto; /* Allow height to grow dynamically */
+    min-height: 300px;
 }
 
 #deluxe-detail {
     background-image: url('WashingBaseboards.jpg');
+    height: auto; /* Allow height to grow dynamically */
+    min-height: 300px;
 }
 
 #window-washing {
     background-image: url('WindowCleaning.jpg');
+    height: auto; /* Allow height to grow dynamically */
+    min-height: 300px;
 }
