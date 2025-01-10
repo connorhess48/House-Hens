@@ -235,8 +235,7 @@ a:hover {
     background-size: cover;
     background-position: center;
     border-radius: 8px;
-    overflow: hidden;
-    height: 400px; /* Ensure consistent photo dimensions */
+    aspect-ratio: 16 / 9; /* Maintain natural proportions of the photos */
 }
 
 /* Dark Grey Square Above Photo */
@@ -255,13 +254,12 @@ a:hover {
 
 /* Description Text */
 .service-overlay {
-    position: absolute;
-    bottom: 0; /* Anchor the text to the bottom of the section */
+    position: relative;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
     color: #ffffff; /* White text for descriptions */
     text-align: center;
-    padding: 1rem; /* Padding for description text */
+    padding: 2rem; /* Add spacing for longer text */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
     box-sizing: border-box; /* Ensure padding doesn’t affect dimensions */
 }
 
