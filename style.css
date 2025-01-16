@@ -231,7 +231,7 @@ a:hover {
 /* Services Page */
 .service {
     position: relative;
-    background-size: contain; /* Fit the entire image into the section */
+    background-size: cover; /* Fit the entire image into the section */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent tiling */
     color: #fff;
