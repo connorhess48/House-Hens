@@ -42,11 +42,13 @@ a:hover {
     vertical-align: middle; /* Align it with the text */
 }
 
+/* Navbar Logos */
 .nav-links img {
-    pointer-events: none; /* Prevent hover effects on the logo */
-    margin-left: -10px; /* Adjust spacing to move the logo outside the hover box */
-}
-
+    width: 60px; /* Adjust icon size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5px; /* Add space between the icon and the text */
+    vertical-align: middle; /* Align the icon with the text */
+} 
 .nav-links {
     list-style: none;
     display: flex;
@@ -67,10 +69,9 @@ a:hover {
 }
 
 .nav-links a:hover {
-    color: #dd4632;
-    background-color: #fff;
-    padding: 0.5rem;
-    border-radius: 5px;
+    color: #dd4632; /* Change text color to red */
+    background-color: transparent; /* Remove white background hover */
+    text-decoration: underline; /* Optional: add underline for hover */
 }
 
 /* Hero Section */
