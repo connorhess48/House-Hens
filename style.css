@@ -251,24 +251,28 @@ a:hover {
 .service {
     position: relative;
     margin-bottom: 2rem;
-    background-size: contain; /* Ensure the entire image is visible */
-    background-position: center center; /* Center the image within the container */
-    background-repeat: no-repeat; /* Prevent tiling */
+    background-size: cover; /* Scale image to cover the container */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* No tiling */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align header at the top */
-    width: 100%; /* Full width */
-    min-height: 300px; /* Adjust for consistent height */
+    justify-content: flex-start;
+    width: 100%; /* Full container width */
+    height: auto; /* Allow height to adjust dynamically */
+    padding-top: 56.25%; /* Maintain a 16:9 aspect ratio */
     overflow: hidden; /* Prevent overflow */
 }
 
 .service-header {
-    background-color: rgba(51, 51, 51, 0.8); /* Dark grey with transparency */
-    color: #dd4632; /* Red text */
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+    color: #dd4632; /* Red for titles */
     text-align: center;
     padding: 1rem;
-    z-index: 2; /* Ensure header is above the image */
-    position: relative; /* Keep it in the normal flow */
+    position: absolute; /* Overlay on top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2; /* Ensure it’s above the background */
 }
 
 .service-header h2 {
@@ -278,24 +282,21 @@ a:hover {
 
 /* Description Text */
 .service-overlay {
-    position: absolute; /* Layer over the image */
-    bottom: 0; /* Anchor to the bottom of the container */
+    position: absolute; /* Overlay at the bottom */
+    bottom: 0;
     left: 0;
     right: 0;
-    padding: 1rem;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black for better visibility */
-    color: #fff; /* White text */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black for text visibility */
+    color: #fff; /* White text for contrast */
     text-align: center;
-    z-index: 2;
-    box-sizing: border-box; /* Include padding in width calculation */
+    padding: 1rem;
+    z-index: 2; /* Ensure overlay is above the image */
 }
 
 .service-overlay p {
     margin: 0;
     font-size: 1rem;
-    line-height: 1.6;
-    max-width: 90%;
-    margin: 0 auto; /* Center align text within the overlay */
+    line-height: 1.5;
 }
 
 /* Background Images for Each Service */
