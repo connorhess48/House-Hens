@@ -231,12 +231,12 @@ a:hover {
 /* Services Page */
 .service {
     position: relative;
-    background-size: contain; /* Fit the entire image into the section */
+    background-size: contain; /* Ensure the entire image fits */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent tiling */
     color: #fff;
     text-align: center;
-    height: 50vh;
+    height: 300px; /* Set a fixed height */
     display: flex;
     flex-direction: column;
     justify-content: center;
