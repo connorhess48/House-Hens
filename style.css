@@ -230,89 +230,56 @@ a:hover {
 
 /* Services Page */
 .services-content {
-    max-width: 800px;
-    margin: 100px auto 50px;
-    text-align: center;
+    max-width: 1200px; /* Centered layout with maximum width */
+    margin: 100px auto 50px; /* Spacing around the content */
+    text-align: center; /* Center the title and description */
     padding: 0 1rem;
 }
 
 .services-content h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #dd4632; /* Red for page title */
+    color: #dd4632; /* Red title color */
 }
 
 .services-content p {
     font-size: 1rem;
     margin-bottom: 2rem;
-    color: #fff;
+    color: #333; /* Dark gray text */
 }
 
+/* Individual Service Section */
 .service {
-    position: relative;
-    margin-bottom: 2rem;
-    background-size: cover; /* Ensure the image covers the container */
-    background-position: center center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent tiling */
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    width: 100%; /* Full container width */
-    height: 300px; /* Consistent height for all sections */
-    border-radius: 8px; /* Optional: Rounded corners */
-    overflow: hidden; /* Prevent overflow */
+    justify-content: center;
+    flex-direction: column; /* Stack image and text vertically */
+    margin: 2rem 0; /* Space between services */
+    text-align: center; /* Center-align text */
 }
 
-.service-header {
-    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background */
-    color: #dd4632; /* Red text for titles */
+.service-content {
+    max-width: 600px; /* Limit width for better readability */
+    margin: 0 auto; /* Center content */
     text-align: center;
-    padding: 1rem 0; /* Padding around the header text */
-    width: 100%; /* Ensure full width */
-    z-index: 2; /* Place above the background image */
 }
 
+.service-image {
+    width: 100%; /* Make image responsive */
+    max-width: 300px; /* Limit the maximum width of images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 1rem; /* Space below the image */
+    border-radius: 8px; /* Optional rounded corners */
+}
 
-.service-header h2 {
+.service-content h2 {
     font-size: 1.8rem;
-    margin: 0; /* Remove default margin for centering */
+    margin-bottom: 0.5rem;
+    color: #dd4632; /* Red title color */
 }
 
-/* Description Text */
-.service-overlay {
-    position: absolute; /* Overlay positioned at the bottom */
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black for better text visibility */
-    color: #fff; /* White text for contrast */
-    text-align: center;
-    padding: 1rem;
-    z-index: 2; /* Place above the background image */
-    box-sizing: border-box; /* Include padding in width/height calculation */
-}
-
-.service-overlay p {
-    margin: 0;
+.service-content p {
     font-size: 1rem;
-    line-height: 1.5;
-}
-
-/* Background Images for Each Service */
-#general-cleaning {
-    background-image: url('General.jpg');
-}
-
-#delightful-detail {
-    background-image: url('Cobwebs.jpg');
-}
-
-#deluxe-detail {
-    background-image: url('WashingBaseboards.jpg');
-}
-
-#window-washing {
-    background-image: url('WindowCleaning.jpg');
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Dark gray text color */
 }
