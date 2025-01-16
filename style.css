@@ -93,10 +93,8 @@ a:hover {
 }
 
 .hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    z-index: 2;
 }
 
 .hero h1 {
