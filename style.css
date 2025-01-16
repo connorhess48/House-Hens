@@ -35,6 +35,8 @@ a:hover {
     font-size: 1.8rem;
     font-weight: bold;
     color: #dd4632;
+    display: flex;
+    align-items: center; /* Align text and logo vertically */
 }
 
 .logo-image {
@@ -79,6 +81,25 @@ a:hover {
     text-decoration: underline; /* Optional: add underline for hover */
 }
 
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .navbar .logo {
+        font-size: 1.2rem; /* Reduce font size for mobile */
+    }
+
+    .logo-image {
+        width: 30px; /* Reduce logo size for mobile */
+        margin-left: 5px; /* Adjust spacing for mobile */
+    }
+
+    .nav-links a {
+        font-size: 1rem; /* Slightly smaller text for nav links */
+    }
+
+    .nav-links img {
+        width: 40px; /* Reduce logo size for nav links */
+    }
+}
 /* Hero Section */
 .hero {
     position: relative;
