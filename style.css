@@ -42,6 +42,14 @@ a:hover {
     vertical-align: middle; /* Align it with the text */
 }
 
+/* Navbar Logos */
+.nav-links img {
+    width: 20px; /* Adjust icon size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5px; /* Add space between the icon and the text */
+    vertical-align: middle; /* Align the icon with the text */
+}
+
 .nav-links {
     list-style: none;
     display: flex;
