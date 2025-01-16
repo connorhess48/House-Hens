@@ -208,7 +208,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px; /* Add space between the text and the hen image */
+    /*gap: 20px;  Add space between the text and the hen image */
 }
 
 .welcome-hen {
