@@ -98,7 +98,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     text-align: center; /* Center-align the text */
-    gap: 15px; /* Add spacing between elements */
+    gap: 10px; /* Add spacing between elements */
     z-index: 2;
 }
 
