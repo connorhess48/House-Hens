@@ -203,6 +203,19 @@ a:hover {
     color: #dd4632;
 }
 
+/* Style for Welcome Hen */
+.welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Add space between the text and the hen image */
+}
+
+.welcome-hen {
+    width: 100px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
 .estimate-card p {
     font-size: 1rem;
     margin-bottom: 0.5rem;
