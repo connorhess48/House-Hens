@@ -44,7 +44,7 @@ a:hover {
 
 /* Navbar Logos */
 .nav-links img {
-    width: 50px; /* Adjust icon size */
+    width: 60px; /* Adjust icon size */
     height: auto; /* Maintain aspect ratio */
     margin-right: 5px; /* Add space between the icon and the text */
     vertical-align: middle; /* Align the icon with the text */
