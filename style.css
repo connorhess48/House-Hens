@@ -27,6 +27,8 @@ a:hover {
     width: 100%;
     top: 0;
     z-index: 1000;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    flex-wrap: nowrap; /* Prevent wrapping of items */
 }
 
 .navbar .logo {
@@ -56,10 +58,12 @@ a:hover {
     flex: 1;
     margin: 0;
     padding: 0;
+    overflow-x: auto; /* Make nav links scrollable */
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 .nav-links li {
-    flex: 1;
+    flex: 0;
     text-align: center;
 }
 
