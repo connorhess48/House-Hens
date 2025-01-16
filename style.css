@@ -97,8 +97,6 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center; /* Center-align the text */
-    z-index: 2;
 }
 
 .hero h1 {
@@ -210,9 +208,9 @@ a:hover {
 /* Style for Welcome Hen */
 .welcome-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    gap: 20px; /* Add space between the text and the hen image */
 }
 
 .welcome-hen {
