@@ -35,6 +35,13 @@ a:hover {
     color: #dd4632;
 }
 
+.logo-image {
+    width: 50px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Space between logo text and image */
+    vertical-align: middle; /* Align it with the text */
+}
+
 .nav-links {
     list-style: none;
     display: flex;
