@@ -32,7 +32,8 @@ a:hover {
 }
 
 .navbar .logo {
-    font-size: 1.8rem;
+    font-size: 2rem; /* Slightly larger for logo style */
+    font-family: 'Helvetica', sans-serif; /* Use Helvetica for a clean logo style */
     color: #dd4632;
     display: flex;
     align-items: center; /* Align text and logo vertically */
@@ -42,7 +43,7 @@ a:hover {
     width: 50px; /* Adjust width as needed */
     height: auto; /* Maintain aspect ratio */
     margin-left: 10px; /* Space between logo text and image */
-    vertical-align: middle; /* Align it with the text */
+    vertical-align: baseline; /* Align it with the text */
 }
 
 /* Navbar Logos */
@@ -50,7 +51,7 @@ a:hover {
     width: 60px; /* Adjust icon size */
     height: auto; /* Maintain aspect ratio */
     margin-right: 2px; /* Add space between the icon and the text */
-    vertical-align: middle; /* Align the icon with the text */
+    vertical-align: text-bottom; /* Align the icon with the text */
 } 
 .nav-links {
     list-style: none;
