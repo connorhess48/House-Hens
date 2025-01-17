@@ -85,7 +85,10 @@ a:hover {
     color: #dd4632; /* Change text color to red */
     background-color: transparent; /* Remove white background hover */
     text-decoration: underline; /* Optional: add underline for hover */
+    text-decoration-thickness: 2px; /* Control thickness of underline */
+    text-underline-offset: 4px; /* Position underline slightly below the text */
 }
+
 
 /* Mobile Adjustments */
 @media (max-width: 768px) {
