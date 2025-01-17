@@ -34,6 +34,7 @@ a:hover {
 .navbar .logo {
     font-size: 2rem; /* Slightly larger for logo style */
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     color: #dd4632;
     display: flex;
     align-items: center; /* Align text and logo vertically */
