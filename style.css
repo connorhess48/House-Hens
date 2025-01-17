@@ -82,7 +82,7 @@ a:hover {
     line-height: 1.5; /* Add spacing for proper vertical alignment */
     display: flex; /* Make the text an inline-flex container */
     align-items: center; /* Vertically center align text and underline */
-    padding: 0.5rem 0;
+    padding: 1.5rem 0;
 }
 
 .nav-links a:hover {
