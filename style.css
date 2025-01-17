@@ -69,7 +69,6 @@ a:hover {
     overflow-x: auto; /* Make nav links scrollable */
     white-space: nowrap; /* Prevent text wrapping */
     align-items: center; /* Align nav links vertically with the navbar */
-    top: 4px;
 }
 
 .nav-links li {
@@ -80,7 +79,7 @@ a:hover {
 .nav-links a {
     color: #fff; /* White nav links */
     font-size: 1.4rem;
-    line-height: 1.5; /* Add spacing for proper vertical alignment */
+    line-height: 2.5; /* Add spacing for proper vertical alignment */
     display: flex; /* Make the text an inline-flex container */
     align-items: center; /* Vertically center align text and underline */
 }
