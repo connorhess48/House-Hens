@@ -69,6 +69,7 @@ a:hover {
     overflow-x: auto; /* Make nav links scrollable */
     white-space: nowrap; /* Prevent text wrapping */
     align-items: center; /* Align nav links vertically with the navbar */
+    top: 4px;
 }
 
 .nav-links li {
