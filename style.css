@@ -55,6 +55,9 @@ a:hover {
     height: auto; /* Maintain aspect ratio */
     margin-right: 2px; /* Add space between the icon and the text */
     vertical-align: middle; /* Align the icon with the text */
+    position: relative; /* Fine-tune placement */
+    top: 2px; /* Adjust vertical alignment slightly */
+
 } 
 .nav-links {
     list-style: none;
@@ -77,8 +80,9 @@ a:hover {
     color: #fff; /* White nav links */
     font-size: 1.4rem;
     line-height: 1.5; /* Add spacing for proper vertical alignment */
-    display: inline-flex; /* Make the text an inline-flex container */
+    display: flex; /* Make the text an inline-flex container */
     align-items: center; /* Vertically center align text and underline */
+    padding: 0.5rem 0;
 }
 
 .nav-links a:hover {
