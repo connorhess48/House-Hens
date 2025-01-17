@@ -79,7 +79,7 @@ a:hover {
     color: #dd4632; /* Change text color to red */
     background-color: transparent; /* Remove white background hover */
     text-decoration: underline; /* Optional: add underline for hover */
-    text-underline-offset: 5px;
+    text-underline-offset: 7px;
 }
 
 /* Mobile Adjustments */
