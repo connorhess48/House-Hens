@@ -298,7 +298,7 @@ a:hover {
     transform: translateY(-50%); /* Adjust for true vertical centering */
     width: 100px; /* Adjust hen size */
     height: auto; /* Maintain aspect ratio */
-    z-index: 2; /* Place above the background but below the content */
+    z-index: 4; /* Place above the background but below the content */
 }
 
 .left-hen {
