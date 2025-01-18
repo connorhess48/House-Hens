@@ -297,7 +297,7 @@ a:hover {
     z-index: 2; /* Place the content above the overlay */
     padding: 1.5rem;
     max-width: 800px; /* Limit the text width for readability */
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for text readability */
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background for text readability */
     border-radius: 8px; /* Add rounded corners */
 }
 
