@@ -296,20 +296,18 @@ a:hover {
     position: absolute;
     top: 50%; /* Center vertically */
     transform: translateY(-50%); /* Adjust for true vertical centering */
-    width: 120px; /* Adjust hen size */
+    width: 100px; /* Adjust hen size */
     height: auto; /* Maintain aspect ratio */
     z-index: 2; /* Place above the background but below the content */
-    display: none; /* Hidden by default for mobile */
 }
 
-.service-hen.hen-left {
-    left: 10%; /* Position to the left side */
+.left-hen {
+    left: -10%; /* Position the left hen outside the main service box */
 }
 
-.service-hen.hen-right {
-    right: 10%; /* Position to the right side */
+.right-hen {
+    right: -10%; /* Position the right hen outside the main service box */
 }
-
 
 .service-content {
     position: relative;
@@ -320,18 +318,6 @@ a:hover {
     border-radius: 8px; /* Add rounded corners */
     overflow-y: auto; /* Enable vertical scrolling if content overflows */
     max-height: 50vh; /* Set a maximum height to allow scrolling when needed */
-}
-
-/* Mobile Adjustments */
-@media (max-width: 768px) {
-    .service-content {
-        max-height: 10vh; /* Reduce height further for smaller screens */
-        padding: 1rem; /* Adjust padding for smaller screens */
-    }
-
-    .service-hen {
-        display: block; /* Show hens on larger screens */
-    }
 }
 
 .service-content h2 {
@@ -345,6 +331,17 @@ a:hover {
     font-size: 1rem;
     line-height: 1.8;
     color: #f1f1f1; /* Softer white for less strain */
+}
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .service-content {
+        max-height: 10vh; /* Reduce height further for smaller screens */
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .service-hen {
+        display: block; /* Show hens on larger screens */
+    }
 }
 
 /* Background Images for Each Service */
