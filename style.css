@@ -297,8 +297,18 @@ a:hover {
     z-index: 2; /* Place the content above the overlay */
     padding: 1.5rem;
     max-width: 800px; /* Limit the text width for readability */
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background for text readability */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
     border-radius: 8px; /* Add rounded corners */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    max-height: 50vh; /* Set a maximum height to allow scrolling when needed */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .service-content {
+        max-height: 40vh; /* Reduce height further for smaller screens */
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
 }
 
 .service-content h2 {
