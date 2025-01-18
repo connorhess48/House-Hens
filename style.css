@@ -306,7 +306,7 @@ a:hover {
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     .service-content {
-        max-height: 40vh; /* Reduce height further for smaller screens */
+        max-height: 25vh; /* Reduce height further for smaller screens */
         padding: 1rem; /* Adjust padding for smaller screens */
     }
 }
