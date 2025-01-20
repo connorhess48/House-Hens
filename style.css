@@ -339,6 +339,25 @@ a:hover {
     line-height: 1.8;
     color: #f1f1f1; /* Softer white for less strain */
 }
+
+.body-margins {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 5%; /* Narrow margin for the pattern */
+    background: url('HenPattern.png') repeat-y; /* Replace with your hen image */
+    background-size: 60px; /* Adjust size of the hen pattern */
+    z-index: 1; /* Place behind other content */
+}
+
+.body-margins.left {
+    left: 0; /* Left side of the page */
+}
+
+.body-margins.right {
+    right: 0; /* Right side of the page */
+}
+
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     .service-content {
