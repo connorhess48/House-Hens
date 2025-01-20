@@ -167,7 +167,7 @@ a:hover {
     background-color: #b63724;
 }
 
-/* Prevent Hen Pattern Overlap on Footer */
+/* Footer Adjustments */
 .footer-bar {
     display: flex;
     justify-content: space-around;
@@ -176,8 +176,8 @@ a:hover {
     color: #fff; /* White text */
     padding: 2rem 1rem;
     gap: 2rem; /* Add spacing between sections */
-    position: relative; /* Ensure footer layers above patterns */
-    z-index: 2; /* Higher than the hen pattern */
+    position: relative;
+    z-index: 2; /* Keep footer above hens */
 }
 
 /* Footer Section Styles */
@@ -296,29 +296,29 @@ a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for separation */
 }
 
-/* Body Margins for Diagonal Hen Pattern */
+/* Body Margins for Hen Pattern */
 .body-margins {
     position: fixed;
     top: 0;
-    bottom: 0;
-    width: 5%; /* Narrow margin for the pattern */
+    bottom: 100px; /* Stop just above the footer */
+    width: 8%; /* Wider margin for larger hens */
     background-repeat: repeat; /* Repeat the pattern */
     z-index: 1; /* Place behind other content */
-    pointer-events: none; /* Prevent interaction with the pattern */
+    pointer-events: none; /* Prevent interaction */
 }
 
 .body-margins.left {
-    left: 0; /* Left side of the page */
-    background-image: url('HenCleaning2.png'); /* Use HenCleaning2 for the left side */
-    background-size: 80px 160px; /* Adjust size for spacing and diagonal effect */
-    background-position: 0 0; /* Align at the top-left */
+    left: 1%; /* Add margin to prevent cutoff */
+    background-image: url('HenCleaning2.png'); /* Left-side hen */
+    background-size: 100px 200px; /* Larger hen size */
+    background-position: center top; /* Proper alignment */
 }
 
 .body-margins.right {
-    right: 0; /* Right side of the page */
-    background-image: url('HenCleaning1.png'); /* Use HenCleaning1 for the right side */
-    background-size: 80px 160px; /* Adjust size for spacing and diagonal effect */
-    background-position: 0 80px; /* Offset diagonally relative to the left */
+    right: 1%; /* Add margin to prevent cutoff */
+    background-image: url('HenCleaning1.png'); /* Right-side hen */
+    background-size: 100px 200px; /* Larger hen size */
+    background-position: center top; /* Proper alignment */
 }
 
 
