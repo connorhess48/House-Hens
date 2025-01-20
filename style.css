@@ -298,7 +298,6 @@ a:hover {
     top: 0;
     bottom: 0;
     width: 5%; /* Narrow margin for the pattern */
-    background-repeat: repeat; /* Repeat the pattern */
     background-size: 80px 80px; /* Adjust size for a smaller, visually appealing pattern */
     z-index: 1; /* Place behind other content */
 }
@@ -306,15 +305,23 @@ a:hover {
 .body-margins.left {
     left: 0; /* Left side of the page */
     background-image: url('HenCleaning2.png'); /* Use HenCleaning2 for the left side */
-    background-position: 0 0, 40px 40px; /* Diagonal pattern */
+    background-repeat: repeat; /* Repeat the pattern */
+    background-position: 0 0; /* Start at the top-left corner */
+    background-size: 80px 80px; /* Diagonal spacing */
+    transform: rotate(-45deg) translateY(-50px); /* Rotate and translate for diagonal alignment */
+    transform-origin: top right; /* Anchor rotation */
 }
 
 .body-margins.right {
     right: 0; /* Right side of the page */
     background-image: url('HenCleaning1.png'); /* Use HenCleaning1 for the right side */
-    background-position: 0 0, 40px 40px; /* Diagonal pattern */
-    transform: scaleX(-1); /* Mirror the pattern for symmetry */
+    background-repeat: repeat; /* Repeat the pattern */
+    background-position: 0 0; /* Start at the top-right corner */
+    background-size: 80px 80px; /* Diagonal spacing */
+    transform: rotate(-45deg) translateY(-50px); /* Rotate and translate for diagonal alignment */
+    transform-origin: top left; /* Anchor rotation */
 }
+
 
 /* Services Content */
 .service-content {
