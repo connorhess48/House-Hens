@@ -167,7 +167,7 @@ a:hover {
     background-color: #b63724;
 }
 
-/* Footer Section */
+/* Prevent Hen Pattern Overlap on Footer */
 .footer-bar {
     display: flex;
     justify-content: space-around;
@@ -176,8 +176,11 @@ a:hover {
     color: #fff; /* White text */
     padding: 2rem 1rem;
     gap: 2rem; /* Add spacing between sections */
+    position: relative; /* Ensure footer layers above patterns */
+    z-index: 2; /* Higher than the hen pattern */
 }
 
+/* Footer Section Styles */
 .footer-section {
     flex: 1;
     max-width: 300px; /* Ensure sections don’t stretch too much */
@@ -211,6 +214,7 @@ a:hover {
 .footer-nav-links li {
     margin: 0.5rem 0;
 }
+
 
 /* Estimates Page Styles */
 .estimates-content {
@@ -300,6 +304,7 @@ a:hover {
     width: 5%; /* Narrow margin for the pattern */
     background-repeat: repeat; /* Repeat the pattern */
     z-index: 1; /* Place behind other content */
+    pointer-events: none; /* Prevent interaction with the pattern */
 }
 
 .body-margins.left {
@@ -315,6 +320,7 @@ a:hover {
     background-size: 80px 160px; /* Adjust size for spacing and diagonal effect */
     background-position: 0 80px; /* Offset diagonally relative to the left */
 }
+
 
 
 /* Services Content */
