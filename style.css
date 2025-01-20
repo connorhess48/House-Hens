@@ -292,21 +292,28 @@ a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for separation */
 }
 
-.service-hen {
+/* Cartoon Hen Container */
+.cartoon-hen-container {
+    position: relative; /* Keep hens positioned relative to the section */
+    width: 100%; /* Full width of the section */
+    height: 0; /* Prevent extra spacing; hens rely on their absolute positioning */
+}
+
+.cartoon-hen {
     position: absolute;
+    width: 120px; /* Adjust hen size */
+    height: auto; /* Maintain aspect ratio */
     top: 50%; /* Center vertically */
     transform: translateY(-50%); /* Adjust for true vertical centering */
-    width: 100px; /* Adjust hen size */
-    height: auto; /* Maintain aspect ratio */
-    z-index: 4; /* Place above the background but below the content */
+    z-index: 2; /* Place above the background but below the content */
 }
 
-.left-hen {
-    left: -10%; /* Position the left hen outside the main service box */
+.hen-left {
+    left: -80px; /* Position hen in the left margin */
 }
 
-.right-hen {
-    right: -10%; /* Position the right hen outside the main service box */
+.hen-right {
+    right: -80px; /* Position hen in the right margin */
 }
 
 .service-content {
