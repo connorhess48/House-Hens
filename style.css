@@ -294,26 +294,26 @@ a:hover {
 
 /* Cartoon Hen Container */
 .cartoon-hen-container {
-    position: relative; /* Keep hens positioned relative to the section */
+    position: relative; /* Position hens relative to the section */
     width: 100%; /* Full width of the section */
-    height: 0; /* Prevent extra spacing; hens rely on their absolute positioning */
+    height: 0; /* Prevent extra spacing; hens rely on absolute positioning */
 }
 
 .cartoon-hen {
     position: absolute;
-    width: 120px; /* Adjust hen size */
+    width: 150px; /* Increased hen size */
     height: auto; /* Maintain aspect ratio */
     top: 50%; /* Center vertically */
-    transform: translateY(-50%); /* Adjust for true vertical centering */
+    transform: translateY(-50%); /* True vertical centering */
     z-index: 2; /* Place above the background but below the content */
 }
 
 .hen-left {
-    left: -80px; /* Position hen in the left margin */
+    left: 5%; /* Bring the hen closer to the section */
 }
 
 .hen-right {
-    right: -80px; /* Position hen in the right margin */
+    right: 5%; /* Bring the hen closer to the section */
 }
 
 .service-content {
