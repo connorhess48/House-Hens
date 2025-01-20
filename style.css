@@ -292,30 +292,28 @@ a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for separation */
 }
 
-/* Body Margins for Repeating Hen Pattern */
+/* Body Margins for Diagonal Hen Pattern */
 .body-margins {
     position: fixed;
     top: 0;
     bottom: 0;
     width: 5%; /* Narrow margin for the pattern */
-    background-size: 80px 80px; /* Adjust size for a visually appealing pattern */
+    background-repeat: repeat; /* Repeat the pattern */
     z-index: 1; /* Place behind other content */
 }
 
 .body-margins.left {
     left: 0; /* Left side of the page */
     background-image: url('HenCleaning2.png'); /* Use HenCleaning2 for the left side */
-    background-repeat: repeat; /* Repeat the pattern */
-    background-position: 0 0; /* Start at the top-left corner */
-    background-size: 80px 80px; /* Space hens diagonally */
+    background-size: 80px 160px; /* Adjust size for spacing and diagonal effect */
+    background-position: 0 0; /* Align at the top-left */
 }
 
 .body-margins.right {
     right: 0; /* Right side of the page */
     background-image: url('HenCleaning1.png'); /* Use HenCleaning1 for the right side */
-    background-repeat: repeat; /* Repeat the pattern */
-    background-position: 0 40px; /* Offset to align diagonally with the left side */
-    background-size: 80px 80px; /* Space hens diagonally */
+    background-size: 80px 160px; /* Adjust size for spacing and diagonal effect */
+    background-position: 0 80px; /* Offset diagonally relative to the left */
 }
 
 
