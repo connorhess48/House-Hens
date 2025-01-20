@@ -297,21 +297,21 @@ a:hover {
     position: fixed;
     top: 0;
     bottom: 0;
-    width: 10%; /* Adjust width for visible margin */
-    background-size: 80px 80px; /* Control size of the hen pattern */
-    background-repeat: repeat-y; /* Repeat vertically */
-    z-index: 1; /* Place behind other content */
-    pointer-events: none; /* Ensure the margins are not interactive */
+    width: 10%;
+    background-size: 80px 80px; /* Adjust the size of the hen pattern */
+    background-repeat: repeat-y; /* Repeat the pattern vertically */
+    z-index: 1; /* Ensure it stays behind the content */
+    pointer-events: none; /* Prevent user interaction */
 }
 
 .body-margins.left {
-    left: 0; /* Position on the left side */
-    background-image: url('HenCleaning1.png'); /* Replace with your left hen image */
+    left: 0;
+    background-image: url('HenCleaning1.png');
 }
 
 .body-margins.right {
-    right: 0; /* Position on the right side */
-    background-image: url('HenCleaning2.png'); /* Replace with your right hen image */
+    right: 0;
+    background-image: url('HenCleaning2.png');
 }
 
 /* Services Content */
