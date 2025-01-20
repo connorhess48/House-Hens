@@ -301,7 +301,7 @@ a:hover {
 
 .cartoon-hen {
     position: absolute;
-    width: 150px; /* Increased hen size */
+    width: 550px; /* Increased hen size */
     height: auto; /* Maintain aspect ratio */
     top: 50%; /* Center vertically */
     transform: translateY(-50%); /* True vertical centering */
