@@ -359,7 +359,7 @@ a:hover {
 }
 
 /* For medium-large screens (1200px to 1920px) */
-@media (max-width: 1200px) {
+@media (max-width: 1919px) {
     .body-margins {
         width: 28%;
     }
