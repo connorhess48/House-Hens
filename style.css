@@ -296,31 +296,6 @@ a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for separation */
 }
 
-/* Body Margins for Hen Pattern */
-.body-margins {
-    position: fixed;
-    top: 80px;
-    bottom: 0;
-    width: 26%; /* Wider margin to fit hens properly */
-    background-repeat: repeat; /* Space the pattern evenly */
-    z-index: 1; /* Place behind other content */
-    pointer-events: none; /* Prevent interaction */
-}
-
-.body-margins.left {
-    left: 0; /* Align to the edge */
-    background-image: url('HenCleaning2.png'); /* Left-side hen */
-    background-size: 170px auto; /* Larger hen size for better visibility */
-    background-position: left top; /* Center the pattern */
-}
-
-.body-margins.right {
-    right: 0; /* Align to the edge */
-    background-image: url('HenCleaning1.png'); /* Right-side hen */
-    background-size: 170px auto; /* Larger hen size for better visibility */
-    background-position: right top; /* Center the pattern */
-}
-
 /* Services Content */
 .service-content {
     position: relative;
@@ -346,61 +321,79 @@ a:hover {
     color: #f1f1f1; /* Softer white for less strain */
 }
 
-/* For extra-large screens (above 1920px) */
-@media (min-width: 3000px) {
-    .body-margins {
-        width: 30%; /* Wider margins for very large screens */
-    }
+/* Default Body Margins for Medium Screens (1280px-2559px) */
+.body-margins {
+    position: fixed;
+    top: 80px; /* Start below the navbar */
+    bottom: 100px; /* Stop above the footer */
+    width: 20%; /* Adjusted for medium-sized screens */
+    background-repeat: repeat; /* Space the pattern evenly */
+    z-index: 1; /* Place behind other content */
+    pointer-events: none; /* Prevent interaction */
+}
 
+.body-margins.left {
+    left: 0; /* Align to the edge */
+    background-image: url('HenCleaning2.png'); /* Left-side hen */
+    background-size: 130px auto; /* Default hen size */
+    background-position: center top;
+}
+
+.body-margins.right {
+    right: 0; /* Align to the edge */
+    background-image: url('HenCleaning1.png'); /* Right-side hen */
+    background-size: 130px auto; /* Default hen size */
+    background-position: center top;
+}
+
+/* Extra Large Screens (3200px and above) */
+@media (min-width: 3200px) {
+    .body-margins {
+        width: 25%; /* Wider margin for very large screens */
+    }
     .body-margins.left,
     .body-margins.right {
-        background-size: 200px auto; /* Even larger hens */
+        background-size: 180px auto; /* Larger hens */
     }
 }
 
-/* For medium-large screens (1200px to 1920px) */
-@media (max-width: 2500px) {
+/* Large Screens (2560px to 3199px) */
+@media (min-width: 2560px) and (max-width: 3199px) {
     .body-margins {
-        width: 28%;
+        width: 22%; /* Slightly wider for large screens */
     }
-
     .body-margins.left,
     .body-margins.right {
-        background-size: 160px auto;
+        background-size: 150px auto; /* Adjust hen size */
     }
 }
 
-/* Smaller screens below 1200px (unchanged as before) */
-@media (max-width: 992px) {
+/* Tablets (768px to 1279px) */
+@media (max-width: 1279px) and (min-width: 768px) {
     .body-margins {
-        width: 30%;
+        width: 15%; /* Narrower margin for tablets */
     }
-
     .body-margins.left,
     .body-margins.right {
-        background-size: 140px auto;
+        background-size: 100px auto; /* Smaller hens */
     }
 }
 
-@media (max-width: 768px) {
+/* Large Phones (576px to 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
     .body-margins {
-        width: 35%;
+        width: 10%; /* Very narrow margin */
     }
-
     .body-margins.left,
     .body-margins.right {
-        background-size: 120px auto;
+        background-size: 70px auto; /* Even smaller hens */
     }
 }
 
-@media (max-width: 576px) {
+/* Small Phones (≤575px) */
+@media (max-width: 575px) {
     .body-margins {
-        width: 40%;
-    }
-
-    .body-margins.left,
-    .body-margins.right {
-        background-size: 100px auto;
+        display: none; /* No hens on small phones */
     }
 }
 
