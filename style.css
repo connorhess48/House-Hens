@@ -349,7 +349,7 @@ a:hover {
 /* Extra Large Screens (3200px and above) */
 @media (min-width: 3200px) {
     .body-margins {
-        width: 29%; /* Wider margin for very large screens */
+        width: 28%; /* Wider margin for very large screens */
     }
     .body-margins.left,
     .body-margins.right {
