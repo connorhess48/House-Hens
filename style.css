@@ -346,48 +346,61 @@ a:hover {
     color: #f1f1f1; /* Softer white for less strain */
 }
 
-/* Responsive Adjustments for Smaller Screens */
-@media (max-width: 1200px) {
+/* For extra-large screens (above 1920px) */
+@media (min-width: 1920px) {
     .body-margins {
-        width: 28%; /* Slightly wider margin for smaller screens */
+        width: 30%; /* Wider margins for very large screens */
     }
 
     .body-margins.left,
     .body-margins.right {
-        background-size: 140px 140px; /* Reduce hen size for better proportions */
+        background-size: 200px auto; /* Even larger hens */
     }
 }
 
-@media (max-width: 992px) {
+/* For medium-large screens (1200px to 1920px) */
+@media (max-width: 1200px) {
     .body-margins {
-        width: 30%; /* Wider margins for better spacing */
+        width: 28%;
     }
 
     .body-margins.left,
     .body-margins.right {
-        background-size: 120px 120px; /* Further reduce hen size */
+        background-size: 160px auto;
+    }
+}
+
+/* Smaller screens below 1200px (unchanged as before) */
+@media (max-width: 992px) {
+    .body-margins {
+        width: 30%;
+    }
+
+    .body-margins.left,
+    .body-margins.right {
+        background-size: 140px auto;
     }
 }
 
 @media (max-width: 768px) {
     .body-margins {
-        width: 35%; /* Further increase margin width */
+        width: 35%;
     }
 
     .body-margins.left,
     .body-margins.right {
-        background-size: 100px 100px; /* Smaller hens for narrower screens */
+        background-size: 120px auto;
     }
 }
 
 @media (max-width: 576px) {
     .body-margins {
-        width: 40%; /* Maximum margin width for smallest screens */
+        width: 40%;
     }
 
     .body-margins.left,
     .body-margins.right {
-        background-size: 80px 80px; /* Minimized hens for very small screens */
+        background-size: 100px auto;
     }
 }
 
