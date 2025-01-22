@@ -301,27 +301,25 @@ a:hover {
     position: fixed;
     top: 0;
     bottom: 100px; /* Stop just above the footer */
-    width: 8%; /* Wider margin for larger hens */
+    width: 12%; /* Wider margin to fit hens properly */
     background-repeat: repeat; /* Repeat the pattern */
     z-index: 1; /* Place behind other content */
     pointer-events: none; /* Prevent interaction */
 }
 
 .body-margins.left {
-    left: 1%; /* Add margin to prevent cutoff */
+    left: 0; /* Align to the edge */
     background-image: url('HenCleaning2.png'); /* Left-side hen */
-    background-size: 100px 200px; /* Larger hen size */
+    background-size: 120px 240px; /* Adjust size for better proportion */
     background-position: center top; /* Proper alignment */
 }
 
 .body-margins.right {
-    right: 1%; /* Add margin to prevent cutoff */
+    right: 0; /* Align to the edge */
     background-image: url('HenCleaning1.png'); /* Right-side hen */
-    background-size: 100px 200px; /* Larger hen size */
+    background-size: 120px 240px; /* Adjust size for better proportion */
     background-position: center top; /* Proper alignment */
 }
-
-
 
 /* Services Content */
 .service-content {
