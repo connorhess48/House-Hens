@@ -346,15 +346,48 @@ a:hover {
     color: #f1f1f1; /* Softer white for less strain */
 }
 
-/* Mobile Adjustments */
-@media (max-width: 768px) {
-    .service-content {
-        max-height: 10vh; /* Reduce height further for smaller screens */
-        padding: 1rem; /* Adjust padding for smaller screens */
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 1200px) {
+    .body-margins {
+        width: 28%; /* Slightly wider margin for smaller screens */
     }
 
-    .service-hen {
-        display: block; /* Show hens on larger screens */
+    .body-margins.left,
+    .body-margins.right {
+        background-size: 140px 140px; /* Reduce hen size for better proportions */
+    }
+}
+
+@media (max-width: 992px) {
+    .body-margins {
+        width: 30%; /* Wider margins for better spacing */
+    }
+
+    .body-margins.left,
+    .body-margins.right {
+        background-size: 120px 120px; /* Further reduce hen size */
+    }
+}
+
+@media (max-width: 768px) {
+    .body-margins {
+        width: 35%; /* Further increase margin width */
+    }
+
+    .body-margins.left,
+    .body-margins.right {
+        background-size: 100px 100px; /* Smaller hens for narrower screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .body-margins {
+        width: 40%; /* Maximum margin width for smallest screens */
+    }
+
+    .body-margins.left,
+    .body-margins.right {
+        background-size: 80px 80px; /* Minimized hens for very small screens */
     }
 }
 
