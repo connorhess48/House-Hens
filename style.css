@@ -326,7 +326,7 @@ a:hover {
     position: fixed;
     top: 80px; /* Start below the navbar */
     bottom: 100px; /* Stop above the footer */
-    width: 20%; /* Adjusted for medium-sized screens */
+    width: 26%; /* Adjusted for medium-sized screens */
     background-repeat: repeat; /* Space the pattern evenly */
     z-index: 1; /* Place behind other content */
     pointer-events: none; /* Prevent interaction */
