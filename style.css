@@ -302,7 +302,7 @@ a:hover {
     top: 0;
     bottom: 100px; /* Stop just above the footer */
     width: 12%; /* Wider margin to fit hens properly */
-    background-repeat: repeat; /* Repeat the pattern */
+    background-repeat: space; /* Space the pattern evenly */
     z-index: 1; /* Place behind other content */
     pointer-events: none; /* Prevent interaction */
 }
@@ -310,15 +310,15 @@ a:hover {
 .body-margins.left {
     left: 0; /* Align to the edge */
     background-image: url('HenCleaning2.png'); /* Left-side hen */
-    background-size: 120px 240px; /* Adjust size for better proportion */
-    background-position: center top; /* Proper alignment */
+    background-size: 150px 300px; /* Larger hen size for better visibility */
+    background-position: center; /* Center the pattern */
 }
 
 .body-margins.right {
     right: 0; /* Align to the edge */
     background-image: url('HenCleaning1.png'); /* Right-side hen */
-    background-size: 120px 240px; /* Adjust size for better proportion */
-    background-position: center top; /* Proper alignment */
+    background-size: 150px 300px; /* Larger hen size for better visibility */
+    background-position: center; /* Center the pattern */
 }
 
 /* Services Content */
