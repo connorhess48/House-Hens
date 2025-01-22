@@ -301,7 +301,7 @@ a:hover {
     position: fixed;
     top: 80px;
     bottom: 100px; /* Stop just above the footer */
-    width: 25%; /* Wider margin to fit hens properly */
+    width: 26%; /* Wider margin to fit hens properly */
     background-repeat: repeat; /* Space the pattern evenly */
     z-index: 1; /* Place behind other content */
     pointer-events: none; /* Prevent interaction */
@@ -310,14 +310,14 @@ a:hover {
 .body-margins.left {
     left: 0; /* Align to the edge */
     background-image: url('HenCleaning2.png'); /* Left-side hen */
-    background-size: 180px auto; /* Larger hen size for better visibility */
+    background-size: 170px auto; /* Larger hen size for better visibility */
     background-position: left top; /* Center the pattern */
 }
 
 .body-margins.right {
     right: 0; /* Align to the edge */
     background-image: url('HenCleaning1.png'); /* Right-side hen */
-    background-size: 180px auto; /* Larger hen size for better visibility */
+    background-size: 170px auto; /* Larger hen size for better visibility */
     background-position: right top; /* Center the pattern */
 }
 
