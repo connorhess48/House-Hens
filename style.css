@@ -301,7 +301,7 @@ a:hover {
     position: fixed;
     top: 0;
     bottom: 100px; /* Stop just above the footer */
-    width: 12%; /* Wider margin to fit hens properly */
+    width: 15%; /* Wider margin to fit hens properly */
     background-repeat: space; /* Space the pattern evenly */
     z-index: 1; /* Place behind other content */
     pointer-events: none; /* Prevent interaction */
