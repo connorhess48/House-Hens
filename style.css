@@ -347,7 +347,7 @@ a:hover {
 }
 
 /* For extra-large screens (above 1920px) */
-@media (min-width: 1920px) {
+@media (min-width: 3000px) {
     .body-margins {
         width: 30%; /* Wider margins for very large screens */
     }
@@ -359,7 +359,7 @@ a:hover {
 }
 
 /* For medium-large screens (1200px to 1920px) */
-@media (max-width: 1919px) {
+@media (max-width: 2500px) {
     .body-margins {
         width: 28%;
     }
