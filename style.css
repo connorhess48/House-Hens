@@ -300,7 +300,7 @@ a:hover {
 .body-margins {
     position: fixed;
     top: 80px;
-    bottom: 0;
+    bottom: calc(100px + 1rem); /* Stop above the footer (footer height + padding) */
     width: 26%; /* Wider margin to fit hens properly */
     background-repeat: repeat; /* Space the pattern evenly */
     z-index: 1; /* Place behind other content */
