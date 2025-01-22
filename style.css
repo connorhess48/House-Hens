@@ -310,14 +310,14 @@ a:hover {
 .body-margins.left {
     left: 0; /* Align to the edge */
     background-image: url('HenCleaning2.png'); /* Left-side hen */
-    background-size: 90px 180px; /* Larger hen size for better visibility */
+    background-size: 150px auto; /* Larger hen size for better visibility */
     background-position: left top; /* Center the pattern */
 }
 
 .body-margins.right {
     right: 0; /* Align to the edge */
     background-image: url('HenCleaning1.png'); /* Right-side hen */
-    background-size: 90px 180px; /* Larger hen size for better visibility */
+    background-size: 150px auto; /* Larger hen size for better visibility */
     background-position: right top; /* Center the pattern */
 }
 
