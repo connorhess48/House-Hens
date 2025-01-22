@@ -335,14 +335,14 @@ a:hover {
 .body-margins.left {
     left: 30px; /* Align to the edge */
     background-image: url('HenCleaning2.png'); /* Left-side hen */
-    background-size: 130px auto; /* Default hen size */
+    background-size: 170px auto; /* Default hen size */
     background-position: center top;
 }
 
 .body-margins.right {
     right: 30px; /* Align to the edge */
     background-image: url('HenCleaning1.png'); /* Right-side hen */
-    background-size: 130px auto; /* Default hen size */
+    background-size: 170px auto; /* Default hen size */
     background-position: center top;
 }
 
