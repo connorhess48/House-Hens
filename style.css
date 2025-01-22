@@ -299,9 +299,9 @@ a:hover {
 /* Body Margins for Hen Pattern */
 .body-margins {
     position: fixed;
-    top: 0;
+    top: 80px;
     bottom: 100px; /* Stop just above the footer */
-    width: 23%; /* Wider margin to fit hens properly */
+    width: 25%; /* Wider margin to fit hens properly */
     background-repeat: repeat; /* Space the pattern evenly */
     z-index: 1; /* Place behind other content */
     pointer-events: none; /* Prevent interaction */
