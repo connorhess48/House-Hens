@@ -360,18 +360,18 @@ a:hover {
     }
     /* Estimates Margins */
     .estimates-body-margins {
-        width: 35%; /* Wider margin for very large screens */
+        width: 34%; /* Wider margin for very large screens */
     }
     .estimates-body-margins.left {
         left: 10px;
         background-image: url('HenCleaning2.png'); /* Left-side hen */
-        background-size: 100px auto; /* Larger hens */
+        background-size: 110px auto; /* Larger hens */
         background-position: center top;
     }
     .estimates-body-margins.right {
         right: 10px;
         background-image: url('HenCleaning1.png'); /* Right-side hen */
-        background-size: 100px auto; /* Larger hens */
+        background-size: 110px auto; /* Larger hens */
         background-position: center top;
     }
 }
