@@ -382,6 +382,24 @@ a:hover {
     }
 }
 
+/* Large Screens (2000px to 2560px) */
+@media (min-width: 2000px) and (max-width: 2560px) {
+    .body-margins {
+        width: 23%; /* Slightly wider for large screens */
+        top: 105px; /* Start below the navbar */
+    }
+    .body-margins.left {
+        left: 20px; /* Align to the edge */
+        background-size: 66px auto; /* Default hen size */
+        background-position: center top;
+    }
+
+    .body-margins.right {
+        right: 20px;
+        background-size: 66px auto; /* Default hen size */
+        background-position: center top;
+    }
+}
 
 @media (max-width: 1600px) {
     .body-margins {
