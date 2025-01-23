@@ -358,13 +358,13 @@ a:hover {
 }
 
 /* Large Screens (2560px to 3199px) */
-@media (min-width: 2560px) and (max-width: 3199px) {
+@media (min-width: 2400px) and (max-width: 3199px) {
     .body-margins {
         width: 24%; /* Slightly wider for large screens */
     }
     .body-margins.left,
     .body-margins.right {
-        background-size: 150px auto; /* Adjust hen size */
+        background-size: 180px auto; /* Adjust hen size */
     }
 }
 
