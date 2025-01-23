@@ -351,15 +351,22 @@ a:hover {
     .body-margins {
         width: 25%; /* Slightly wider for large screens */
         top: 105px; /* Start below the navbar */
+        position: fixed;
+        bottom: 10px; /* Stop above the footer */
+        background-repeat: repeat; /* Space the pattern evenly */
+        z-index: 1; /* Place behind other content */
+        pointer-events: none; /* Prevent interaction */
     }
     .body-margins.left {
         left: 20px; /* Align to the edge */
+        background-image: url('HenCleaning2.png'); /* Left-side hen */
         background-size: 73px auto; /* Default hen size */
         background-position: center top;
     }
 
     .body-margins.right {
         right: 20px;
+        background-image: url('HenCleaning1.png'); /* Left-side hen */
         background-size: 73px auto; /* Default hen size */
         background-position: center top;
     }
@@ -370,15 +377,22 @@ a:hover {
     .body-margins {
         width: 23%; /* Slightly wider for large screens */
         top: 105px; /* Start below the navbar */
+        position: fixed;
+        bottom: 10px; /* Stop above the footer */
+        background-repeat: repeat; /* Space the pattern evenly */
+        z-index: 1; /* Place behind other content */
+        pointer-events: none; /* Prevent interaction */
     }
     .body-margins.left {
         left: 20px; /* Align to the edge */
         background-size: 66px auto; /* Default hen size */
+        background-image: url('HenCleaning2.png'); /* Left-side hen */
         background-position: center top;
     }
 
     .body-margins.right {
         right: 20px;
+        background-image: url('HenCleaning1.png'); /* Left-side hen */
         background-size: 66px auto; /* Default hen size */
         background-position: center top;
     }
