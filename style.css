@@ -360,7 +360,7 @@ a:hover {
     }
     /* Estimates Margins */
     .estimates-body-margins {
-        width: 33.3%; /* Wider margin for very large screens */
+        width: 33.1%; /* Wider margin for very large screens */
     }
     .estimates-body-margins.left {
         left: 10px;
