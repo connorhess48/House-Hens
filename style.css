@@ -442,18 +442,18 @@ a:hover {
 @media (min-width: 2500px) and (max-width: 3199px) {
     .services-body-margins {
         top: 90px;
-        width: 24%; /* Adjusted width */
+        width: 25%; /* Adjusted width */
     }
     .services-body-margins.left {
         left: 20px;
         background-image: url('HenCleaning2.png');
-        background-size: 73px auto;
+        background-size: 76px auto;
         background-position: center top;
     }
     .services-body-margins.right {
         right: 20px;
         background-image: url('HenCleaning1.png');
-        background-size: 73px auto;
+        background-size: 76px auto;
         background-position: center top;
     }
 
