@@ -347,20 +347,20 @@ a:hover {
         width: 31%; /* Wider margin for very large screens */
     }
     .services-body-margins.left {
-        left: 10px;
+        left: 20px;
         background-image: url('HenCleaning2.png'); /* Left-side hen */
         background-size: 100px auto; /* Larger hens */
         background-position: center top;
     }
     .services-body-margins.right {
-        right: 10px;
+        right: 20px;
         background-image: url('HenCleaning1.png'); /* Right-side hen */
         background-size: 100px auto; /* Larger hens */
         background-position: center top;
     }
     /* Estimates Margins */
     .estimates-body-margins {
-        width: 32.5%; /* Wider margin for very large screens */
+        width: 32%; /* Wider margin for very large screens */
     }
     .estimates-body-margins.left {
         left: 0;
