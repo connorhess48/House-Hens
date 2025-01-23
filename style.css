@@ -353,12 +353,12 @@ a:hover {
     }
     .body-margins.left {
         left: 10px;
-        background-size: 125px auto; /* Larger hens */
+        background-size: 110px auto; /* Larger hens */
         background-position: center top;
     }
     .body-margins.right {
         right: 10px;
-        background-size: 125px auto; /* Larger hens */
+        background-size: 110px auto; /* Larger hens */
         background-position: center top;
     }
 }
