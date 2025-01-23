@@ -360,7 +360,7 @@ a:hover {
 /* Large Screens (2560px to 3199px) */
 @media (min-width: 2560px) and (max-width: 3199px) {
     .body-margins {
-        width: 25%; /* Slightly wider for large screens */
+        width: 26%; /* Slightly wider for large screens */
     }
     .body-margins.left {
         left: 20px; /* Align to the edge */
