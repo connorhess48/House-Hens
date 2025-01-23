@@ -383,17 +383,9 @@ a:hover {
 }
 
 
-/* Large Phones (576px to 767px) */
-@media (max-width: 1279px) and (min-width: 576px) {
+@media (max-width: 1600px) {
     .body-margins {
         display: none;
-    }
-}
-
-/* Small Phones (≤575px) */
-@media (max-width: 575px) {
-    .body-margins {
-        display: none; /* No hens on small phones */
     }
 }
 
