@@ -347,13 +347,13 @@ a:hover {
         width: 31.1%; /* Wider margin for very large screens */
     }
     .services-body-margins.left {
-        left: 20px;
+        left: 21px;
         background-image: url('HenCleaning2.png'); /* Left-side hen */
         background-size: 100px auto; /* Larger hens */
         background-position: center top;
     }
     .services-body-margins.right {
-        right: 20px;
+        right: 21px;
         background-image: url('HenCleaning1.png'); /* Right-side hen */
         background-size: 100px auto; /* Larger hens */
         background-position: center top;
