@@ -361,6 +361,7 @@ a:hover {
 @media (min-width: 2560px) and (max-width: 3199px) {
     .body-margins {
         width: 25%; /* Slightly wider for large screens */
+        top: 80px; /* Start below the navbar */
     }
     .body-margins.left {
         left: 20px; /* Align to the edge */
