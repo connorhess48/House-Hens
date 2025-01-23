@@ -364,13 +364,13 @@ a:hover {
     }
     .body-margins.left {
         left: 20px; /* Align to the edge */
-        background-size: 140px auto; /* Default hen size */
+        background-size: 137px auto; /* Default hen size */
         background-position: center top;
     }
 
     .body-margins.right {
         right: 20px;
-        background-size: 140px auto; /* Default hen size */
+        background-size: 137px auto; /* Default hen size */
         background-position: center top;
     }
 }
