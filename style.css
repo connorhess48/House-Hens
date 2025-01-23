@@ -442,7 +442,7 @@ a:hover {
 @media (min-width: 2500px) and (max-width: 3199px) {
     .services-body-margins {
         top: 100px;
-        width: 25%; /* Adjusted width */
+        width: 24%; /* Adjusted width */
     }
     .services-body-margins.left {
         left: 20px;
