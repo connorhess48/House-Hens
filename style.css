@@ -364,7 +364,7 @@ a:hover {
 }
 
 /* Large Screens (2560px to 3199px) */
-@media (min-width: 2560px) and (max-width: 3199px) {
+@media (min-width: 2500px) and (max-width: 3199px) {
     .body-margins {
         width: 25%; /* Slightly wider for large screens */
         top: 105px; /* Start below the navbar */
@@ -383,7 +383,7 @@ a:hover {
 }
 
 /* Large Screens (2000px to 2560px) */
-@media (min-width: 2000px) and (max-width: 2560px) {
+@media (min-width: 2000px) and (max-width: 2499px) {
     .body-margins {
         width: 23%; /* Slightly wider for large screens */
         top: 105px; /* Start below the navbar */
