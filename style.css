@@ -341,6 +341,51 @@ a:hover {
     background-repeat: repeat;
 }
 
+/* Contact Page Styles */
+.contact-content {
+    max-width: 800px;
+    margin: 100px auto 50px; /* Adjusted for fixed navbar */
+    padding: 1.5rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    border-radius: 8px; /* Add rounded corners */
+    color: #f1f1f1; /* Softer white for less strain */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+}
+
+.contact-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #dd4632; /* Red accent for section titles */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.contact-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.contact-content a {
+    color: #dd4632; /* Red links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-content a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Page Hen Pattern */
+.contact-body-margins {
+    position: fixed;
+    top: 80px; /* Start below the navbar */
+    bottom: 10px; /* Stop above the footer */
+    z-index: 1; /* Place behind other content */
+    pointer-events: none; /* Prevent interaction */
+    background-repeat: repeat;
+}
+
 /* Extra Large Screens (3200px and above) */
 @media (min-width: 3200px) {
     .services-body-margins {
@@ -374,6 +419,24 @@ a:hover {
         background-size: 100px auto; /* Larger hens */
         background-position: center top;
     }
+
+    /* Contact Margins */
+    .contact-body-margins {
+        width: 31%; /* Wider margin for very large screens */
+    }
+    .contact-body-margins.left {
+        left: 0;
+        background-image: url('HenCleaning2.png'); /* Left-side hen */
+        background-size: 100px auto; /* Larger hens */
+        background-position: center top;
+    }
+    .contact-body-margins.right {
+        right: 0;
+        background-image: url('HenCleaning1.png'); /* Right-side hen */
+        background-size: 100px auto; /* Larger hens */
+        background-position: center top;
+    }
+}
 }
 
 /* Large Screens (2500px to 3199px) */
@@ -393,6 +456,23 @@ a:hover {
         background-size: 73px auto;
         background-position: center top;
     }
+
+    .contact-body-margins {
+        width: 25%; /* Adjusted width */
+    }
+    .contact-body-margins.left {
+        left: 20px;
+        background-image: url('HenCleaning2.png');
+        background-size: 73px auto;
+        background-position: center top;
+    }
+    .contact-body-margins.right {
+        right: 20px;
+        background-image: url('HenCleaning1.png');
+        background-size: 73px auto;
+        background-position: center top;
+    }
+
 }
 
 /* Medium-Large Screens (2300px to 2499px) */
@@ -429,6 +509,22 @@ a:hover {
         background-size: 66px auto;
         background-position: center top;
     }
+
+    .contact-body-margins {
+        width: 23%; /* Adjusted width */
+    }
+    .contact-body-margins.left {
+        left: 20px;
+        background-image: url('HenCleaning2.png');
+        background-size: 66px auto;
+        background-position: center top;
+    }
+    .contact-body-margins.right {
+        right: 20px;
+        background-image: url('HenCleaning1.png');
+        background-size: 66px auto;
+        background-position: center top;
+    }
 }
 
 /* Small Screens (below 2300px) */
@@ -438,6 +534,10 @@ a:hover {
     }
 
     .estimates-body-margins {
+        display: none; /* Hide hens for small screens */
+    }
+
+    .contact-body-margins {
         display: none; /* Hide hens for small screens */
     }
 }
