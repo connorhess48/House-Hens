@@ -362,10 +362,16 @@ a:hover {
     .body-margins {
         width: 25%; /* Slightly wider for large screens */
     }
-    .body-margins.left,
+    .body-margins.left {
+        left: 0; /* Align to the edge */
+        background-size: 155px auto; /* Default hen size */
+        background-position: center top;
+    }
+
     .body-margins.right {
         right: 0;
-        background-size: 155px auto; /* Adjust hen size */
+        background-size: 155px auto; /* Default hen size */
+        background-position: center top;
     }
 }
 
