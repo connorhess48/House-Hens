@@ -358,19 +358,19 @@ a:hover {
 }
 
 /* Large Screens (2560px to 3199px) */
-@media (min-width: 2400px) and (max-width: 3199px) {
+@media (min-width: 2560px) and (max-width: 3199px) {
     .body-margins {
         width: 25%; /* Slightly wider for large screens */
     }
     .body-margins.left {
         left: 20px; /* Align to the edge */
-        background-size: 137px auto; /* Default hen size */
+        background-size: 80px auto; /* Default hen size */
         background-position: center top;
     }
 
     .body-margins.right {
         right: 20px;
-        background-size: 137px auto; /* Default hen size */
+        background-size: 80px auto; /* Default hen size */
         background-position: center top;
     }
 }
@@ -389,11 +389,7 @@ a:hover {
 /* Large Phones (576px to 767px) */
 @media (max-width: 767px) and (min-width: 576px) {
     .body-margins {
-        width: 10%; /* Very narrow margin */
-    }
-    .body-margins.left,
-    .body-margins.right {
-        background-size: 70px auto; /* Even smaller hens */
+        display: none;
     }
 }
 
