@@ -277,6 +277,16 @@ a:hover {
     color: #000;
 }
 
+/* Estimates Page Hen Pattern */
+.estimates-body-margins {
+    position: fixed;
+    top: 80px; /* Start below the navbar */
+    bottom: 10px; /* Stop above the footer */
+    z-index: 1; /* Place behind other content */
+    pointer-events: none; /* Prevent interaction */
+    background-repeat: repeat;
+}
+
 /* Services Page */
 .service {
     position: relative;
@@ -348,6 +358,22 @@ a:hover {
         background-size: 100px auto; /* Larger hens */
         background-position: center top;
     }
+    /* Estimates Margins */
+    .estimates-body-margins {
+        width: 31%; /* Wider margin for very large screens */
+    }
+    .estimates-body-margins.left {
+        left: 10px;
+        background-image: url('HenCleaning2.png'); /* Left-side hen */
+        background-size: 100px auto; /* Larger hens */
+        background-position: center top;
+    }
+    .estimates-body-margins.right {
+        right: 10px;
+        background-image: url('HenCleaning1.png'); /* Right-side hen */
+        background-size: 100px auto; /* Larger hens */
+        background-position: center top;
+    }
 }
 
 /* Large Screens (2500px to 3199px) */
@@ -386,11 +412,32 @@ a:hover {
         background-size: 66px auto;
         background-position: center top;
     }
+
+    /* Estimates Margins */
+    .estimates-body-margins {
+        width: 23%; /* Adjusted width */
+    }
+    .estimates-body-margins.left {
+        left: 20px;
+        background-size: 66px auto;
+        background-image: url('HenCleaning2.png');
+        background-position: center top;
+    }
+    .estimates-body-margins.right {
+        right: 20px;
+        background-image: url('HenCleaning1.png');
+        background-size: 66px auto;
+        background-position: center top;
+    }
 }
 
 /* Small Screens (below 2300px) */
 @media (max-width: 2299px) {
     .services-body-margins {
+        display: none; /* Hide hens for small screens */
+    }
+
+    .estimates-body-margins {
         display: none; /* Hide hens for small screens */
     }
 }
