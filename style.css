@@ -441,8 +441,8 @@ a:hover {
 /* Large Screens (2500px to 3199px) */
 @media (min-width: 2500px) and (max-width: 3199px) {
     .services-body-margins {
-        top: 90px;
-        bottom: 20px;
+        top: 95px;
+        bottom: 5px;
         width: 25%; /* Adjusted width */
     }
     .services-body-margins.left {
