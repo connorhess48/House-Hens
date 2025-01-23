@@ -437,7 +437,6 @@ a:hover {
         background-position: center top;
     }
 }
-}
 
 /* Large Screens (2500px to 3199px) */
 @media (min-width: 2500px) and (max-width: 3199px) {
