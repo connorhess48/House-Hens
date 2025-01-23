@@ -360,16 +360,16 @@ a:hover {
 /* Large Screens (2560px to 3199px) */
 @media (min-width: 2400px) and (max-width: 3199px) {
     .body-margins {
-        width: 25%; /* Slightly wider for large screens */
+        width: 26%; /* Slightly wider for large screens */
     }
     .body-margins.left {
-        left: 10px; /* Align to the edge */
+        left: 20px; /* Align to the edge */
         background-size: 150px auto; /* Default hen size */
         background-position: center top;
     }
 
     .body-margins.right {
-        right: 10px;
+        right: 20px;
         background-size: 150px auto; /* Default hen size */
         background-position: center top;
     }
