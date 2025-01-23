@@ -326,7 +326,7 @@ a:hover {
     position: fixed;
     top: 80px; /* Start below the navbar */
     bottom: 100px; /* Stop above the footer */
-    width: 26%; /* Adjusted for medium-sized screens */
+    width: 24%; /* Adjusted for medium-sized screens */
     background-repeat: repeat; /* Space the pattern evenly */
     z-index: 1; /* Place behind other content */
     pointer-events: none; /* Prevent interaction */
@@ -335,14 +335,14 @@ a:hover {
 .body-margins.left {
     left: 30px; /* Align to the edge */
     background-image: url('HenCleaning2.png'); /* Left-side hen */
-    background-size: 170px auto; /* Default hen size */
+    background-size: 160px auto; /* Default hen size */
     background-position: center top;
 }
 
 .body-margins.right {
     right: 30px; /* Align to the edge */
     background-image: url('HenCleaning1.png'); /* Right-side hen */
-    background-size: 170px auto; /* Default hen size */
+    background-size: 160px auto; /* Default hen size */
     background-position: center top;
 }
 
@@ -360,7 +360,7 @@ a:hover {
 /* Large Screens (2560px to 3199px) */
 @media (min-width: 2560px) and (max-width: 3199px) {
     .body-margins {
-        width: 22%; /* Slightly wider for large screens */
+        width: 26%; /* Slightly wider for large screens */
     }
     .body-margins.left,
     .body-margins.right {
