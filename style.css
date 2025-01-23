@@ -362,6 +362,7 @@ a:hover {
     .body-margins {
         width: 25%; /* Slightly wider for large screens */
         top: 105px; /* Start below the navbar */
+        bottom: 20px; /* Stop above the footer */
     }
     .body-margins.left {
         left: 20px; /* Align to the edge */
