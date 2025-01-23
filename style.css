@@ -321,24 +321,28 @@ a:hover {
     color: #f1f1f1; /* Softer white for less strain */
 }
 
+/* Services Page Hen Pattern */
+.services-body-margins {
+    position: fixed;
+    top: 80px; /* Start below the navbar */
+    bottom: 10px; /* Stop above the footer */
+    z-index: 1; /* Place behind other content */
+    pointer-events: none; /* Prevent interaction */
+    background-repeat: repeat;
+}
+
 /* Extra Large Screens (3200px and above) */
 @media (min-width: 3200px) {
-    .body-margins {
-        position: fixed;
-        top: 80px; /* Start below the navbar */
-        bottom: 10px; /* Stop above the footer */
+    .services-body-margins {
         width: 31%; /* Wider margin for very large screens */
-        background-repeat: repeat; /* Space the pattern evenly */
-        z-index: 1; /* Place behind other content */
-        pointer-events: none; /* Prevent interaction */
     }
-    .body-margins.left {
+    .services-body-margins.left {
         left: 10px;
         background-image: url('HenCleaning2.png'); /* Left-side hen */
         background-size: 100px auto; /* Larger hens */
         background-position: center top;
     }
-    .body-margins.right {
+    .services-body-margins.right {
         right: 10px;
         background-image: url('HenCleaning1.png'); /* Right-side hen */
         background-size: 100px auto; /* Larger hens */
@@ -346,61 +350,48 @@ a:hover {
     }
 }
 
-/* Large Screens (2560px to 3199px) */
+/* Large Screens (2500px to 3199px) */
 @media (min-width: 2500px) and (max-width: 3199px) {
-    .body-margins {
-        width: 25%; /* Slightly wider for large screens */
-        top: 105px; /* Start below the navbar */
-        position: fixed;
-        bottom: 10px; /* Stop above the footer */
-        background-repeat: repeat; /* Space the pattern evenly */
-        z-index: 1; /* Place behind other content */
-        pointer-events: none; /* Prevent interaction */
+    .services-body-margins {
+        width: 25%; /* Adjusted width */
     }
-    .body-margins.left {
-        left: 20px; /* Align to the edge */
-        background-image: url('HenCleaning2.png'); /* Left-side hen */
-        background-size: 73px auto; /* Default hen size */
+    .services-body-margins.left {
+        left: 20px;
+        background-image: url('HenCleaning2.png');
+        background-size: 73px auto;
         background-position: center top;
     }
-
-    .body-margins.right {
+    .services-body-margins.right {
         right: 20px;
-        background-image: url('HenCleaning1.png'); /* Left-side hen */
-        background-size: 73px auto; /* Default hen size */
+        background-image: url('HenCleaning1.png');
+        background-size: 73px auto;
         background-position: center top;
     }
 }
 
-/* Large Screens (2000px to 2560px) */
+/* Medium-Large Screens (2300px to 2499px) */
 @media (min-width: 2300px) and (max-width: 2499px) {
-    .body-margins {
-        width: 23%; /* Slightly wider for large screens */
-        top: 105px; /* Start below the navbar */
-        position: fixed;
-        bottom: 10px; /* Stop above the footer */
-        background-repeat: repeat; /* Space the pattern evenly */
-        z-index: 1; /* Place behind other content */
-        pointer-events: none; /* Prevent interaction */
+    .services-body-margins {
+        width: 23%; /* Adjusted width */
     }
-    .body-margins.left {
-        left: 20px; /* Align to the edge */
-        background-size: 66px auto; /* Default hen size */
-        background-image: url('HenCleaning2.png'); /* Left-side hen */
+    .services-body-margins.left {
+        left: 20px;
+        background-image: url('HenCleaning2.png');
+        background-size: 66px auto;
         background-position: center top;
     }
-
-    .body-margins.right {
+    .services-body-margins.right {
         right: 20px;
-        background-image: url('HenCleaning1.png'); /* Left-side hen */
-        background-size: 66px auto; /* Default hen size */
+        background-image: url('HenCleaning1.png');
+        background-size: 66px auto;
         background-position: center top;
     }
 }
 
+/* Small Screens (below 2300px) */
 @media (max-width: 2299px) {
-    .body-margins {
-        display: none;
+    .services-body-margins {
+        display: none; /* Hide hens for small screens */
     }
 }
 
