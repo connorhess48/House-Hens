@@ -361,7 +361,7 @@ a:hover {
 @media (min-width: 2560px) and (max-width: 3199px) {
     .body-margins {
         width: 25%; /* Slightly wider for large screens */
-        top: 105px; /* Start below the navbar */
+        top: 95px; /* Start below the navbar */
         bottom: 20px; /* Stop above the footer */
     }
     .body-margins.left {
