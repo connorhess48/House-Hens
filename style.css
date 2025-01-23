@@ -268,7 +268,7 @@ a:hover {
 .estimate-card p {
     font-size: 1rem;
     margin-bottom: 0.5rem;
-    color: #555;
+    color: #f1f1f1; /* Softer white for less strain */
 }
 
 .estimate-card .price {
