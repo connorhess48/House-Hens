@@ -351,9 +351,15 @@ a:hover {
     .body-margins {
         width: 32%; /* Wider margin for very large screens */
     }
-    .body-margins.left,
+    .body-margins.left {
+        left: 10px;
+        background-size: 125px auto; /* Larger hens */
+        background-position: center top;
+    }
     .body-margins.right {
-        background-size: 150px auto; /* Larger hens */
+        right: 10px;
+        background-size: 125px auto; /* Larger hens */
+        background-position: center top;
     }
 }
 
