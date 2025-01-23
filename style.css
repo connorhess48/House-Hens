@@ -178,6 +178,7 @@ a:hover {
     gap: 2rem; /* Add spacing between sections */
     position: relative;
     z-index: 2; /* Keep footer above hens */
+    width: 100%;
 }
 
 /* Footer Section Styles */
@@ -215,6 +216,18 @@ a:hover {
     margin: 0.5rem 0;
 }
 
+html, body {
+    height: 100%; /* Ensure the body takes up the full height of the viewport */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Allow content to flow vertically */
+}
+
+main {
+    flex: 1; /* Make the main content expand to fill available space */
+}
 
 /* Estimates Page Styles */
 .estimates-content {
@@ -485,7 +498,6 @@ a:hover {
         background-size: 74px auto;
         background-position: center top;
     }
-
 }
 
 /* Medium-Large Screens (2300px to 2499px) */
