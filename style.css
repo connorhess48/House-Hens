@@ -326,7 +326,7 @@ a:hover {
     position: fixed;
     top: 80px; /* Start below the navbar */
     bottom: 100px; /* Stop above the footer */
-    width: 23%; /* Adjusted for medium-sized screens */
+    width: 21%; /* Adjusted for medium-sized screens */
     background-repeat: repeat; /* Space the pattern evenly */
     z-index: 1; /* Place behind other content */
     pointer-events: none; /* Prevent interaction */
@@ -335,14 +335,14 @@ a:hover {
 .body-margins.left {
     left: 30px; /* Align to the edge */
     background-image: url('HenCleaning2.png'); /* Left-side hen */
-    background-size: 150px auto; /* Default hen size */
+    background-size: 140px auto; /* Default hen size */
     background-position: center top;
 }
 
 .body-margins.right {
     right: 30px; /* Align to the edge */
     background-image: url('HenCleaning1.png'); /* Right-side hen */
-    background-size: 200px auto; /* Default hen size */
+    background-size: 140px auto; /* Default hen size */
     background-position: center top;
 }
 
