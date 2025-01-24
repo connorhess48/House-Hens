@@ -349,7 +349,7 @@ a:hover {
 
 /* Contact Page Styles */
 .contact-content {
-    flex: 1; /* Allow main content to grow and fill available space */
+    flex: 1; /* Allow content to fill available space */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center vertically */
@@ -362,9 +362,10 @@ a:hover {
     border-radius: 8px; /* Add rounded corners */
     color: #f1f1f1; /* Softer white for less strain */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    min-height: calc(100vh - 80px - 120px); /* Adjust for navbar and footer height */
 }
 
-/* Update for Contact Us Heading */
+/* Contact Heading */
 .contact-content h1 {
     font-size: 3rem; /* Increase size */
     margin-bottom: 1rem;
