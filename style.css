@@ -349,13 +349,13 @@ a:hover {
 
 /* Contact Page Styles */
 .contact-content {
-    flex: 1;
+    flex: 1; /* Allow main content to grow and fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
     max-width: 800px;
-    margin: 0 auto; /* Center horizontally */
-    position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    margin: 0 auto;
     padding: 2rem;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
