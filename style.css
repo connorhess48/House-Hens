@@ -478,6 +478,23 @@ a:hover {
         background-position: center top;
     }
 
+    /* Estimates Margins */
+    .estimates-body-margins {
+        width: 27%; /* Adjusted width */
+    }
+    .estimates-body-margins.left {
+        left: 20px;
+        background-size: 74px auto;
+        background-image: url('HenCleaning2.png');
+        background-position: center top;
+    }
+    .estimates-body-margins.right {
+        right: 20px;
+        background-image: url('HenCleaning1.png');
+        background-size: 74px auto;
+        background-position: center top;
+    }
+    
     .contact-body-margins {
         width: 25%; /* Adjusted width */
     }
