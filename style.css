@@ -351,7 +351,11 @@ a:hover {
 .contact-content {
     flex: 1;
     max-width: 800px;
-    margin: 100px auto 50px; /* Adjusted for fixed navbar */
+    margin: 0 auto; /* Center horizontally */
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
     padding: 2rem;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
@@ -360,8 +364,9 @@ a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
 }
 
+/* Update for Contact Us Heading */
 .contact-content h1 {
-    font-size: 2.5rem;
+    font-size: 3rem; /* Increase size */
     margin-bottom: 1rem;
     color: #dd4632; /* Red accent for section titles */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -373,15 +378,17 @@ a:hover {
     line-height: 1.8;
 }
 
+/* Contact Info */
 .contact-info {
     list-style: none;
     padding: 0;
     margin: 0;
+    font-size: 1.4rem; /* Increase font size slightly for better readability */
 }
 
 .contact-info li {
     font-size: 1.2rem;
-    margin: 0.5rem 0;
+    margin: 1rem 0;
 }
 
 .contact-info a {
