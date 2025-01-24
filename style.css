@@ -488,6 +488,7 @@ a:hover {
 
     /* Estimates Margins */
     .estimates-body-margins {
+        top: 95px;
         width: 27%; /* Adjusted width */
     }
     .estimates-body-margins.left {
