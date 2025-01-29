@@ -589,6 +589,17 @@ a:hover {
     }
 }
 
+@media (max-width: 1536px) {
+    .service-content {
+        max-width: 90%; /* Allow more flexibility */
+        padding: 1rem;
+        position: absolute; /* Ensures it stays inside the section */
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10%; /* Adjust placement */
+    }
+}
+
 /* Background Images for Each Service */
 #general-cleaning {
     background-image: url('General.jpg'); /* Replace with your actual image */
