@@ -414,25 +414,99 @@ a:hover {
     opacity: 0.5; /* Set transparency */
 }
 
-@media (min-width: 3800px) {
+/* Ultra-Wide Screens with Specific Height (3800px and above, 2160px height) */
+@media (min-width: 3800px) and (max-height: 2160px) {
     .services-body-margins {
-        width: 10%; /* Further reduce the width for ultra-wide screens */
+        width: 10%; /* Adjust width for ultra-wide screens */
     }
     .services-body-margins.left {
         left: 30px;
         background-image: url('HenCleaning2.png'); /* Left-side hen */
-        background-size: 50px auto; /* Smaller hens to scale proportionally */
+        background-size: 50px auto; /* Scale hens for ultra-wide screens */
         background-position: center top;
     }
     .services-body-margins.right {
         right: 30px;
         background-image: url('HenCleaning1.png'); /* Right-side hen */
-        background-size: 50px auto; /* Smaller hens to scale proportionally */
+        background-size: 50px auto; /* Scale hens for ultra-wide screens */
+        background-position: center top;
+    }
+
+    /* Estimates Margins */
+    .estimates-body-margins {
+        width: 11%; /* Adjust width for better balance */
+    }
+    .estimates-body-margins.left {
+        left: 30px;
+        background-image: url('HenCleaning2.png'); /* Left-side hen */
+        background-size: 50px auto; /* Scale hens */
+        background-position: center top;
+    }
+    .estimates-body-margins.right {
+        right: 30px;
+        background-image: url('HenCleaning1.png'); /* Right-side hen */
+        background-size: 50px auto; /* Scale hens */
+        background-position: center top;
+    }
+
+    /* Contact Margins */
+    .contact-body-margins {
+        width: 10%; /* Adjust width for ultra-wide screens */
+    }
+    .contact-body-margins.left {
+        left: 30px;
+        background-image: url('HenCleaning2.png'); /* Left-side hen */
+        background-size: 50px auto; /* Scale hens */
+        background-position: center top;
+    }
+    .contact-body-margins.right {
+        right: 30px;
+        background-image: url('HenCleaning1.png'); /* Right-side hen */
+        background-size: 50px auto; /* Scale hens */
         background-position: center top;
     }
 }
-/* Extra Large Screens (3200px and above) */
-@media (min-width: 3200px) {
+
+/* Ultra-Wide Screens with Shorter Height (3800px and above, 1440px height) */
+@media (min-width: 3800px) and (max-height: 1440px) {
+    .services-body-margins {
+        width: 12%; /* Slightly wider for more vertical space */
+    }
+    .services-body-margins.left {
+        left: 30px;
+        background-image: url('HenCleaning2.png'); /* Left-side hen */
+        background-size: 60px auto; /* Scale hens slightly */
+        background-position: center top;
+    }
+    .services-body-margins.right {
+        right: 30px;
+        background-image: url('HenCleaning1.png'); /* Right-side hen */
+        background-size: 60px auto; /* Scale hens slightly */
+        background-position: center top;
+    }
+}
+
+/* Ultra-Wide Screens with Even Shorter Height (3800px and above, 1271px height) */
+@media (min-width: 3800px) and (max-height: 1271px) {
+    .services-body-margins {
+        width: 15%; /* Increase width for shorter screens */
+    }
+    .services-body-margins.left {
+        left: 30px;
+        background-image: url('HenCleaning2.png'); /* Left-side hen */
+        background-size: 70px auto; /* Larger hens for balance */
+        background-position: center top;
+    }
+    .services-body-margins.right {
+        right: 30px;
+        background-image: url('HenCleaning1.png'); /* Right-side hen */
+        background-size: 70px auto; /* Larger hens for balance */
+        background-position: center top;
+    }
+}
+
+/* Extra Large Screens (3200px to 3799px, any height above 1440px) */
+@media (min-width: 3200px) and (max-width: 3799px) and (min-height: 1441px) {
     .services-body-margins {
         width: 31.1%; /* Wider margin for very large screens */
     }
@@ -448,6 +522,7 @@ a:hover {
         background-size: 100px auto; /* Larger hens */
         background-position: center top;
     }
+
     /* Estimates Margins */
     .estimates-body-margins {
         width: 32.3%; /* Wider margin for very large screens */
@@ -536,7 +611,6 @@ a:hover {
         background-size: 73px auto;
         background-position: center top;
     }
-
 }
 
 /* Medium-Large Screens (2300px to 2499px) */
@@ -603,17 +677,6 @@ a:hover {
 
     .contact-body-margins {
         display: none; /* Hide hens for small screens */
-    }
-}
-
-@media (max-width: 1536px) {
-    .service-content {
-        max-width: 90%; /* Allow more flexibility */
-        padding: 1rem;
-        position: absolute; /* Ensures it stays inside the section */
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 10%; /* Adjust placement */
     }
 }
 
