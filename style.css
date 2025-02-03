@@ -416,19 +416,7 @@ a:hover {
 
 @media (min-width: 3800px) {
     .services-body-margins {
-        width: 12%; /* Further reduce the width for ultra-wide screens */
-    }
-    .services-body-margins.left {
-        left: 40px; /* Slightly larger margin for balance */
-        background-image: url('HenCleaning2.png'); /* Left-side hen */
-        background-size: 40px auto; /* Smaller hens to scale proportionally */
-        background-position: center top;
-    }
-    .services-body-margins.right {
-        right: 40px; /* Slightly larger margin for balance */
-        background-image: url('HenCleaning1.png'); /* Right-side hen */
-        background-size: 40px auto; /* Smaller hens to scale proportionally */
-        background-position: center top;
+        display: none;
     }
 }
 /* Extra Large Screens (3200px and above) */
