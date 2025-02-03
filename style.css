@@ -416,7 +416,19 @@ a:hover {
 
 @media (min-width: 3800px) {
     .services-body-margins {
-        display: none;
+        width: 10%; /* Further reduce the width for ultra-wide screens */
+    }
+    .services-body-margins.left {
+        left: 30px;
+        background-image: url('HenCleaning2.png'); /* Left-side hen */
+        background-size: 50px auto; /* Smaller hens to scale proportionally */
+        background-position: center top;
+    }
+    .services-body-margins.right {
+        right: 30px;
+        background-image: url('HenCleaning1.png'); /* Right-side hen */
+        background-size: 50px auto; /* Smaller hens to scale proportionally */
+        background-position: center top;
     }
 }
 /* Extra Large Screens (3200px and above) */
