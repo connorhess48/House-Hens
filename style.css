@@ -680,6 +680,148 @@ a:hover {
     }
 }
 
+/* Small Screens (1024x600) */
+@media (max-width: 1024px) and (max-height: 600px) {
+    .services-body-margins {
+        display: none; /* Hide hens */
+    }
+    .service-content h2 {
+        font-size: 1.2rem; /* Reduce title size */
+    }
+    .service-content p {
+        font-size: 0.8rem; /* Reduce text size */
+    }
+}
+
+/* Small Screens (1024x768) */
+@media (max-width: 1024px) and (max-height: 768px) {
+    .services-body-margins {
+        display: none;
+    }
+    .service-content h2 {
+        font-size: 1.3rem;
+    }
+    .service-content p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Small Screens (1280x800) */
+@media (max-width: 1280px) and (max-height: 800px) {
+    .services-body-margins {
+        display: none;
+    }
+    .service-content h2 {
+        font-size: 1.4rem;
+    }
+    .service-content p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Medium Screens (1366x768) */
+@media (max-width: 1366px) and (max-height: 768px) {
+    .services-body-margins {
+        display: none;
+    }
+    .service-content h2 {
+        font-size: 1.5rem;
+    }
+    .service-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Medium Screens (1440x900) */
+@media (max-width: 1440px) and (max-height: 900px) {
+    .services-body-margins {
+        display: none;
+    }
+    .service-content h2 {
+        font-size: 1.6rem;
+    }
+    .service-content p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Medium Screens (1680x900) */
+@media (max-width: 1680px) and (max-height: 900px) {
+    .services-body-margins {
+        display: none;
+    }
+    .service-content h2 {
+        font-size: 1.7rem;
+    }
+    .service-content p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Medium Screens (1680x1050) */
+@media (max-width: 1680px) and (max-height: 1050px) {
+    .services-body-margins {
+        display: none;
+    }
+    .service-content h2 {
+        font-size: 1.8rem;
+    }
+    .service-content p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Full HD Screens (1920x1080) */
+@media (min-width: 1920px) and (max-height: 1080px) {
+    .services-body-margins {
+        width: 20%;
+    }
+    .services-body-margins.left {
+        left: 30px;
+        background-image: url('HenCleaning2.png');
+        background-size: 70px auto;
+        background-position: center top;
+    }
+    .services-body-margins.right {
+        right: 30px;
+        background-image: url('HenCleaning1.png');
+        background-size: 70px auto;
+        background-position: center top;
+    }
+    .service-content h2 {
+        font-size: 2rem;
+    }
+    .service-content p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Full HD+ Screens (1920x1200) */
+@media (min-width: 1920px) and (max-height: 1200px) {
+    .services-body-margins {
+        width: 20%;
+    }
+    .services-body-margins.left {
+        left: 30px;
+        background-image: url('HenCleaning2.png');
+        background-size: 70px auto;
+        background-position: center top;
+    }
+    .services-body-margins.right {
+        right: 30px;
+        background-image: url('HenCleaning1.png');
+        background-size: 70px auto;
+        background-position: center top;
+    }
+    .service-content h2 {
+        font-size: 2.2rem;
+    }
+    .service-content p {
+        font-size: 1.3rem;
+    }
+}
+
+
 /* Background Images for Each Service */
 #general-cleaning {
     background-image: url('General.jpg'); /* Replace with your actual image */
