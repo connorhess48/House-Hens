@@ -677,6 +677,10 @@ a:hover {
     .service-content p {
         font-size: 0.8rem; /* Reduce text size */
     }
+    .service-content {
+        padding: 1rem; /* Reduce padding */
+        max-width: 90%; /* Adjust content box width */
+    }
 }
 
 /* Small Screens (1024x768) */
@@ -690,6 +694,10 @@ a:hover {
     .service-content p {
         font-size: 0.85rem;
     }
+    .service-content {
+        padding: 1rem;
+        max-width: 90%;
+    }
 }
 
 /* Small Screens (1280x800) */
@@ -702,6 +710,10 @@ a:hover {
     }
     .service-content p {
         font-size: 0.9rem;
+    }
+    .service-content {
+        padding: 1.2rem;
+        max-width: 90%;
     }
 }
 
@@ -765,13 +777,13 @@ a:hover {
     .services-body-margins.left {
         left: 30px;
         background-image: url('HenCleaning2.png');
-        background-size: 70px auto;
+        background-size: 50px auto; /* Adjust size */
         background-position: center top;
     }
     .services-body-margins.right {
         right: 30px;
         background-image: url('HenCleaning1.png');
-        background-size: 70px auto;
+        background-size: 50px auto; /* Adjust size */
         background-position: center top;
     }
     .service-content h2 {
@@ -790,13 +802,13 @@ a:hover {
     .services-body-margins.left {
         left: 30px;
         background-image: url('HenCleaning2.png');
-        background-size: 70px auto;
+        background-size: 50px auto; /* Adjust size */
         background-position: center top;
     }
     .services-body-margins.right {
         right: 30px;
         background-image: url('HenCleaning1.png');
-        background-size: 70px auto;
+        background-size: 50px auto; /* Adjust size */
         background-position: center top;
     }
     .service-content h2 {
@@ -806,7 +818,6 @@ a:hover {
         font-size: 1.3rem;
     }
 }
-
 
 /* Background Images for Each Service */
 #general-cleaning {
