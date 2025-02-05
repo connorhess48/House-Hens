@@ -19,7 +19,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Navbar Styles */
+/* ✅ Restored Proper Navbar Design */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -57,6 +57,49 @@ a:hover {
     text-decoration: underline;
 }
 
+/* ✅ Ensuring Background Image Covers the Whole Screen on Small Screens */
+.hero {
+    position: relative;
+    background: url('CleanHouse.jpg') no-repeat center center;
+    background-size: cover; /* Default: Covers entire screen */
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* ✅ Large Screens - Contain Background with Black Margins */
+@media (min-width: 1680px) {
+    .hero {
+        background-size: contain; /* Keeps the image contained */
+        max-width: 2300px; /* Adjusted to prevent shrinking */
+        margin: 0 auto;
+    }
+}
+
+/* ✅ Ensure Full Coverage for Smaller Screens */
+@media (max-width: 1680px) {
+    .hero {
+        background-size: cover;
+        width: 100%;
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .navbar .logo {
+        font-size: 1.5rem;
+    }
+    .nav-links a {
+        font-size: 1rem;
+    }
+}
+
 /* Footer */
 .footer-bar {
     display: flex;
@@ -79,50 +122,17 @@ a:hover {
     color: #dd4632;
 }
 
-/* Hero Background Image (Applies to Index Page) */
-.hero {
-    position: relative;
-    background: url('CleanHouse.jpg') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-/* Large Screens - Add Black Margins (Retaining Hens) */
-@media (min-width: 1680px) {
-    .hero {
-        background-size: contain;
-        max-width: 2500px; /* Adjust so image doesn’t shrink too much */
-        margin: 0 auto;
+/* Ultra-Wide Screens (Hen Pattern Adjustments) */
+@media (min-width: 3200px) {
+    .body-margins {
+        width: 31%;
     }
-}
-
-/* Ensure Full Coverage for Smaller Screens */
-@media (max-width: 1680px) {
-    .hero {
-        background-size: cover;
-        width: 100%;
+    .body-margins.left {
+        background-image: url('HenCleaning2.png');
+        background-size: 100px auto;
     }
-}
-
-/* Responsive Media Queries */
-@media (max-width: 1366px) {
-    .content-container {
-        padding: 1rem;
-        max-width: 90%;
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 1024px) {
-    .content-container {
-        padding: 0.5rem;
-        font-size: 0.8rem;
-        max-width: 85%;
+    .body-margins.right {
+        background-image: url('HenCleaning1.png');
+        background-size: 100px auto;
     }
 }
