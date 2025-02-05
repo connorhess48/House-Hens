@@ -16,17 +16,26 @@
     width: 100%;
 }
 
-/* Large Screens - Black Margins and Contain */
-@media (min-width: 1680px) {
+/* Medium Screens (1920px - 3000px) - Reduce Margins */
+@media (min-width: 1920px) and (max-width: 3000px) {
     .hero {
-        background-size: contain; /* Contains with black margins */
-        max-width: 2000px; /* Ensures it remains large */
+        background-size: contain;
+        max-width: 85%; /* Reducing margin width */
+        margin: 0 auto;
+    }
+}
+
+/* Ultra-Wide Screens (3000px+) - Reduce Margins More */
+@media (min-width: 3000px) {
+    .hero {
+        background-size: contain;
+        max-width: 75%; /* Allow a larger image while keeping margins */
         margin: 0 auto;
     }
 }
 
 /* Ensure Full Coverage for Smaller Screens */
-@media (max-width: 1680px) {
+@media (max-width: 1919px) {
     .hero {
         background-size: cover;
         width: 100%;
