@@ -97,8 +97,8 @@ a:hover {
 .hero {
     position: relative;
     background: url('CleanHouse.jpg') no-repeat center center;
-    background-size: contain; /* Prevents excessive stretching */
-    background-color: black; /* Adds black margins on sides for larger screens */
+    background-size: cover; /* Default to covering smaller screens */
+    background-color: black;
     color: #fff;
     text-align: center;
     height: 80vh;
@@ -108,9 +108,11 @@ a:hover {
     align-items: center;
 }
 
-@media (max-width: 1680px) {
+@media (min-width: 1680px) {
     .hero {
-        background-size: cover; /* Stretch to fill screen for smaller displays */
+        background-size: contain; /* Prevent excessive stretching */
+        max-width: 1400px;
+        margin: 0 auto;
     }
 }
 
