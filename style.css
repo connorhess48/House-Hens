@@ -19,7 +19,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Navbar - Restored Original Design */
+/* Navbar Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -30,8 +30,6 @@ a:hover {
     width: 100%;
     top: 0;
     z-index: 1000;
-    overflow-x: auto;
-    flex-wrap: nowrap;
 }
 
 .navbar .logo {
@@ -41,99 +39,22 @@ a:hover {
     color: #dd4632;
     display: flex;
     align-items: center;
-    line-height: 1;
 }
 
-.logo-image {
-    width: 50px;
-    height: auto;
-    margin-left: 10px;
-    vertical-align: middle;
-}
-
-/* Navbar Links */
 .nav-links {
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    flex: 1;
-    margin: 0;
-    padding: 0;
-    overflow-x: auto;
-    white-space: nowrap;
-    align-items: center;
-}
-
-.nav-links li {
-    flex: 0;
-    text-align: center;
+    gap: 2rem;
 }
 
 .nav-links a {
     color: #fff;
     font-size: 1.4rem;
-    display: flex;
-    align-items: center;
-}
-
-.nav-links img {
-    width: 60px;
-    height: auto;
-    margin-right: 2px;
-    vertical-align: middle;
-    position: relative;
-    top: 2px;
 }
 
 .nav-links a:hover {
     color: #dd4632;
-    background-color: transparent;
     text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 4px;
-}
-
-/* Background Image Handling */
-.hero {
-    position: relative;
-    background: url('CleanHouse.jpg') no-repeat center center;
-    background-size: cover; /* Default to covering smaller screens */
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-@media (min-width: 1680px) {
-    .hero {
-        background-size: contain; /* Prevent excessive stretching */
-        max-width: 1400px;
-        margin: 0 auto;
-    }
-}
-
-/* Mobile Adjustments */
-@media (max-width: 768px) {
-    .navbar .logo {
-        font-size: 1.2rem;
-    }
-
-    .logo-image {
-        width: 30px;
-        margin-left: 5px;
-    }
-
-    .nav-links a {
-        font-size: 1rem;
-    }
-
-    .nav-links img {
-        width: 40px;
-    }
 }
 
 /* Footer */
@@ -156,4 +77,52 @@ a:hover {
 
 .footer-section a:hover {
     color: #dd4632;
+}
+
+/* Hero Background Image (Applies to Index Page) */
+.hero {
+    position: relative;
+    background: url('CleanHouse.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Large Screens - Add Black Margins (Retaining Hens) */
+@media (min-width: 1680px) {
+    .hero {
+        background-size: contain;
+        max-width: 2500px; /* Adjust so image doesn’t shrink too much */
+        margin: 0 auto;
+    }
+}
+
+/* Ensure Full Coverage for Smaller Screens */
+@media (max-width: 1680px) {
+    .hero {
+        background-size: cover;
+        width: 100%;
+    }
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1366px) {
+    .content-container {
+        padding: 1rem;
+        max-width: 90%;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .content-container {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        max-width: 85%;
+    }
 }
