@@ -1,0 +1,114 @@
+/* Contact Page Specific Styles */
+
+/* Contact Content */
+.contact-content {
+    flex: 1; /* Allow content to fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    border-radius: 8px;
+    color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-height: calc(100vh - 80px - 120px); /* Adjust for navbar and footer height */
+}
+
+/* Contact Heading */
+.contact-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #dd4632;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.contact-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+/* Contact Info */
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.4rem; /* Increase font size slightly for better readability */
+}
+
+.contact-info li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.contact-info a {
+    color: #dd4632;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Page Hen Pattern */
+.contact-body-margins {
+    position: fixed;
+    top: 80px; /* Start below the navbar */
+    bottom: 10px; /* Stop above the footer */
+    z-index: 1;
+    pointer-events: none;
+    background-repeat: repeat;
+    opacity: 0.5;
+}
+
+.contact-body-margins.left {
+    background-image: url('HenCleaning2.png'); /* Left-side hen */
+}
+
+.contact-body-margins.right {
+    background-image: url('HenCleaning1.png'); /* Right-side hen */
+}
+
+/* Responsive Adjustments for Hens */
+@media (min-width: 3200px) {
+    .contact-body-margins {
+        width: 31%;
+    }
+    .contact-body-margins.left {
+        left: 21px;
+        background-size: 100px auto;
+    }
+    .contact-body-margins.right {
+        right: 21px;
+        background-size: 100px auto;
+    }
+}
+
+@media (max-width: 2299px) {
+    .contact-body-margins {
+        display: none; /* Hide hens for smaller screens */
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .contact-content {
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+    .contact-content h1 {
+        font-size: 2.2rem;
+    }
+    .contact-content p {
+        font-size: 1rem;
+    }
+    .contact-info {
+        font-size: 1.2rem;
+    }
+    .contact-info li {
+        font-size: 
