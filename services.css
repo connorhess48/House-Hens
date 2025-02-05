@@ -116,6 +116,40 @@
     background-repeat: repeat;
     opacity: 0.5;
 }
+/* Hen Pattern for 1920x1080 & 1920x1200 - Up to 2200px */
+@media (min-width: 1920px) and (max-width: 2200px) {
+    .services-body-margins,
+    .estimates-body-margins,
+    .contact-body-margins {
+        width: 20%;
+        position: fixed;
+        top: 80px; /* Start below navbar */
+        bottom: 10px; /* Stop above footer */
+        z-index: 1;
+        pointer-events: none;
+        background-repeat: repeat;
+        opacity: 0.5;
+    }
+
+    /* Left Side Hen */
+    .services-body-margins.left,
+    .estimates-body-margins.left,
+    .contact-body-margins.left {
+        left: 21px;
+        background-image: url('HenCleaning2.png');
+        background-size: 80px auto; /* Adjust size for this resolution */
+    }
+
+    /* Right Side Hen */
+    .services-body-margins.right,
+    .estimates-body-margins.right,
+    .contact-body-margins.right {
+        right: 21px;
+        background-image: url('HenCleaning1.png');
+        background-size: 80px auto; /* Adjust size for this resolution */
+    }
+}
+
 
 /* Large Screens - Hen Pattern Appears */
 @media (min-width: 3200px) {
