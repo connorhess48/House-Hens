@@ -9,7 +9,7 @@ body {
     min-height: 100vh;
 }
 
-/* Navbar */
+/* Navbar (If Not Handled in style.css) */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -86,7 +86,8 @@ body {
 /* Hero Section */
 .hero {
     position: relative;
-    background: url('CleanHouse.jpg') no-repeat center center/cover;
+    background: url('CleanHouse.jpg') no-repeat center center;
+    background-size: cover; /* Default full-screen coverage */
     color: #fff;
     text-align: center;
     height: 80vh;
@@ -94,6 +95,33 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+}
+
+/* Large Screens - Reduce Margins */
+@media (min-width: 1920px) and (max-width: 3000px) {
+    .hero {
+        background-size: contain; /* Prevents excessive stretching */
+        max-width: 85%; /* Reduce width to keep margins */
+        margin: 0 auto;
+    }
+}
+
+/* Ultra-Wide Screens - Keep Image from Getting Too Small */
+@media (min-width: 3000px) {
+    .hero {
+        background-size: contain;
+        max-width: 75%; /* Reduce margins further */
+        margin: 0 auto;
+    }
+}
+
+/* Ensure Full Coverage for Smaller Screens */
+@media (max-width: 1919px) {
+    .hero {
+        background-size: cover;
+        width: 100%;
+    }
 }
 
 /* Dark Overlay for Better Readability */
@@ -119,11 +147,22 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+/* Responsive Adjustments for Small Screens */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem; /* Reduce title size */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Reduce text size */
+    }
+
+    .cta {
+        padding: 0.5rem 1rem; /* Adjust button size */
+    }
 }
 
+/* Call to Action Button */
 .cta {
     display: inline-block;
     padding: 0.75rem 1.5rem;
