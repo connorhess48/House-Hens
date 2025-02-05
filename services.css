@@ -1,5 +1,10 @@
 /* Services Page-Specific Styles */
 
+/* Body Background Fix */
+body {
+    background-color: black; /* Ensure visibility */
+}
+
 /* Hero Section */
 .hero {
     position: relative;
@@ -9,6 +14,7 @@
     color: #fff;
     text-align: center;
     height: 80vh;
+    min-height: 80vh; /* Ensures height on all screens */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,11 +34,14 @@
     z-index: 1;
 }
 
+/* Ensure Hero Content is Visible */
 .hero-content {
     position: relative;
     z-index: 2;
+    padding: 20px;
 }
 
+/* Fix Hero Title Visibility */
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -114,6 +123,7 @@
     .hero {
         background-size: cover;
         width: 100%;
+        min-height: 80vh; /* Ensures it doesn't collapse */
     }
 }
 
