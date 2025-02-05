@@ -1,10 +1,10 @@
 /* Services Page Specific Styles */
 
-/* Hero Section */
+/* ✅ Fixed Hero Section */
 .hero {
     position: relative;
     background: url('CleanHouse.jpg') no-repeat center center;
-    background-size: cover; /* Default: Covers full screen */
+    background-size: cover; /* Default - Full width for smaller screens */
     background-color: black;
     color: #fff;
     text-align: center;
@@ -16,11 +16,11 @@
     width: 100%;
 }
 
-/* ✅ Large Screens - Adjust Background with Black Margins */
+/* ✅ Large Screens - Black Margins, Prevent Shrinking */
 @media (min-width: 1680px) {
     .hero {
         background-size: contain;
-        max-width: 2300px;
+        max-width: 2300px; /* Ensures it remains large but not overly stretched */
         margin: 0 auto;
     }
 }
@@ -33,7 +33,7 @@
     }
 }
 
-/* Services Content */
+/* ✅ Services Content */
 .services-content {
     max-width: 800px;
     margin: 100px auto 50px;
@@ -47,6 +47,7 @@
     color: #dd4632;
 }
 
+/* ✅ Service Descriptions */
 .service {
     background-size: cover;
     background-position: center;
@@ -83,7 +84,7 @@
     color: #f1f1f1;
 }
 
-/* Background Images for Each Service */
+/* ✅ Background Images for Each Service */
 #general-cleaning {
     background-image: url('General.jpg');
 }
@@ -100,7 +101,7 @@
     background-image: url('WindowCleaning.jpg');
 }
 
-/* Services Page Hen Pattern */
+/* ✅ Hen Pattern Adjustments */
 .services-body-margins {
     position: fixed;
     top: 80px;
@@ -111,10 +112,10 @@
     opacity: 0.5;
 }
 
-/* ✅ Large Screens - Display Hen Pattern */
+/* ✅ Large Screens - Hen Pattern Appears */
 @media (min-width: 3200px) {
     .services-body-margins {
-        width: 31%;
+        width: 31.1%;
     }
     .services-body-margins.left {
         left: 21px;
@@ -128,7 +129,7 @@
     }
 }
 
-/* ✅ Hide Hen Pattern on Smaller Screens */
+/* ✅ Small Screens - Hide Hen Pattern */
 @media (max-width: 1680px) {
     .services-body-margins {
         display: none;
