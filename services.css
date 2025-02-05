@@ -4,7 +4,7 @@
 .hero {
     position: relative;
     background: url('CleanHouse.jpg') no-repeat center center;
-    background-size: cover; /* Stretch to fill screen for smaller displays */
+    background-size: cover; /* Default to covering smaller screens */
     background-color: black;
     color: #fff;
     text-align: center;
@@ -19,7 +19,8 @@
 @media (min-width: 1680px) {
     .hero {
         background-size: contain; /* Keeps the image contained */
-        max-width: 1400px;
+        width: 100%;
+        max-width: none;
         margin: 0 auto;
     }
 }
@@ -123,4 +124,3 @@
         display: none;
     }
 }
-
