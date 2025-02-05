@@ -1,4 +1,5 @@
 /* Services Page-Specific Styles */
+
 /* Hero Section */
 .hero {
     position: relative;
@@ -14,96 +15,28 @@
     align-items: center;
     width: 100%;
 }
-/* Medium Screens (1920px - 3000px) - Reduce Margins */
-@media (min-width: 1920px) and (max-width: 3000px) {
-    .hero {
-        background-size: contain;
-        max-width: 70%; /* Reducing margin width */
-        margin: 0 auto;
-    }
-}
-/* Ultra-Wide Screens (3000px+) - Reduce Margins More */
-@media (min-width: 3000px) {
-    .hero {
-        background-size: contain;
-        max-width: 55%; /* Allow a larger image while keeping margins */
-        margin: 0 auto;
-    }
-}
-/* Ensure Full Coverage for Smaller Screens */
-@media (max-width: 1919px) {
-    .hero {
-        background-size: cover;
-        width: 100%;
-    }
+
+/* Hero Overlay */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
-/* Services Content */
-.services-content {
-    max-width: 800px;
-    margin: 100px auto 50px;
-    padding: 0 1rem;
-    text-align: center;
+.hero-content {
+    position: relative;
+    z-index: 2;
 }
 
-.services-content h1 {
-    font-size: 2.5rem;
+.hero h1 {
+    font-size: 3rem;
     margin-bottom: 1rem;
-    color: #dd4632;
-}
-
-/* Service Descriptions */
-.service {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
-    text-align: center;
-    min-height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.service-content {
-    padding: 1.5rem;
-    max-width: 800px;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 8px;
-    overflow-y: auto;
-    max-height: 50vh;
-}
-
-.service-content h2 {
-    font-size: 2rem;
-    color: #dd4632;
-}
-
-.service-content p {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #f1f1f1;
-}
-
-/* Background Images for Each Service */
-#general-cleaning {
-    background-image: url('General.jpg');
-}
-
-#deluxe-detail {
-    background-image: url('WashingBaseboards.jpg');
-}
-
-#delightful-detail {
-    background-image: url('Cobwebs.jpg');
-}
-
-#window-washing {
-    background-image: url('WindowCleaning.jpg');
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 /* Services Page Hen Pattern */
@@ -116,55 +49,71 @@
     background-repeat: repeat;
     opacity: 0.5;
 }
-/* Hen Pattern for 1920x1080 & 1920x1200 - Up to 2200px */
+
+/* Medium Screens (1920px - 2200px) */
 @media (min-width: 1920px) and (max-width: 2200px) {
-    .services-body-margins,
-    .estimates-body-margins,
-    .contact-body-margins {
-        width: 20%;
-        position: fixed;
-        top: 80px; /* Start below navbar */
-        bottom: 10px; /* Stop above footer */
-        z-index: 1;
-        pointer-events: none;
-        background-repeat: repeat;
-        opacity: 0.5;
+    .hero {
+        background-size: contain;
+        max-width: 70%; /* Reduce margins */
+        margin: 0 auto;
     }
 
-    /* Left Side Hen */
-    .services-body-margins.left,
-    .estimates-body-margins.left,
-    .contact-body-margins.left {
-        left: 21px;
-        background-image: url('HenCleaning2.png');
-        background-size: 80px auto; /* Adjust size for this resolution */
-    }
-
-    /* Right Side Hen */
-    .services-body-margins.right,
-    .estimates-body-margins.right,
-    .contact-body-margins.right {
-        right: 21px;
-        background-image: url('HenCleaning1.png');
-        background-size: 80px auto; /* Adjust size for this resolution */
-    }
-}
-
-
-/* Large Screens - Hen Pattern Appears */
-@media (min-width: 3200px) {
     .services-body-margins {
-        width: 31.1%;
+        width: 20%;
     }
+
     .services-body-margins.left {
         left: 21px;
         background-image: url('HenCleaning2.png');
-        background-size: 100px auto;
+        background-size: 80px auto;
     }
+
     .services-body-margins.right {
         right: 21px;
         background-image: url('HenCleaning1.png');
+        background-size: 80px auto;
+    }
+}
+
+/* Large Screens (2200px - 3000px) */
+@media (min-width: 2200px) and (max-width: 3000px) {
+    .hero {
+        background-size: contain;
+        max-width: 65%;
+        margin: 0 auto;
+    }
+
+    .services-body-margins {
+        width: 25%;
+    }
+}
+
+/* Ultra-Wide Screens (3000px+) */
+@media (min-width: 3000px) {
+    .hero {
+        background-size: contain;
+        max-width: 55%;
+        margin: 0 auto;
+    }
+
+    .services-body-margins {
+        width: 31.1%;
+    }
+
+    .services-body-margins.left {
         background-size: 100px auto;
+    }
+
+    .services-body-margins.right {
+        background-size: 100px auto;
+    }
+}
+
+/* Ensure Full Coverage for Smaller Screens */
+@media (max-width: 1919px) {
+    .hero {
+        background-size: cover;
+        width: 100%;
     }
 }
 
