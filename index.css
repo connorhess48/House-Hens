@@ -28,6 +28,19 @@
     z-index: 2;
 }
 
+/* Welcome Hen Styling */
+.welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between text and images */
+}
+
+.welcome-hen {
+    width: 100px;
+    height: auto;
+}
+
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
