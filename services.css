@@ -18,7 +18,7 @@
 @media (min-width: 1920px) and (max-width: 3000px) {
     .hero {
         background-size: contain;
-        max-width: 85%; /* Reducing margin width */
+        max-width: 70%; /* Reducing margin width */
         margin: 0 auto;
     }
 }
@@ -26,7 +26,7 @@
 @media (min-width: 3000px) {
     .hero {
         background-size: contain;
-        max-width: 75%; /* Allow a larger image while keeping margins */
+        max-width: 55%; /* Allow a larger image while keeping margins */
         margin: 0 auto;
     }
 }
