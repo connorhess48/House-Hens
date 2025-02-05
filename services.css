@@ -3,9 +3,7 @@
 /* Hero Section */
 .hero {
     position: relative;
-    background: url('CleanHouse.jpg') no-repeat center center;
-    background-size: cover; /* Default to covering smaller screens */
-    background-color: black;
+    background: url('CleanHouse.jpg') no-repeat center center/cover; /* Adjust for full screen coverage */
     color: #fff;
     text-align: center;
     height: 80vh;
@@ -16,11 +14,27 @@
     width: 100%; /* Ensure full width on smaller screens */
 }
 
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
 /* Large Screens - Adjust Background with Black Margins */
 @media (min-width: 1680px) {
     .hero {
         background-size: contain; /* Keeps the image contained */
-        max-width: 1800px; /* Ensure it's large enough but centered */
+        max-width: 1900px; /* Ensures it remains large but balanced */
         margin: 0 auto;
     }
 }
@@ -48,7 +62,7 @@
 }
 
 .service {
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
