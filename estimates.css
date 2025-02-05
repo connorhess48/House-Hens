@@ -1,0 +1,128 @@
+/* Estimates Page Specific Styles */
+
+/* Estimates Content */
+.estimates-content {
+    max-width: 800px;
+    margin: 100px auto 50px; /* Adjusted for fixed navbar */
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.estimates-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #dd4632;
+}
+
+.estimates-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #f1f1f1;
+}
+
+/* Estimate Cards */
+.estimate-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.estimate-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #dd4632;
+}
+
+.estimate-card p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.estimate-card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Welcome Hen */
+.welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.welcome-hen {
+    width: 100px;
+    height: auto;
+}
+
+/* Responsive Patterns for Hens */
+.estimates-body-margins {
+    position: fixed;
+    top: 80px; /* Start below the navbar */
+    bottom: 10px; /* Stop above the footer */
+    z-index: 1;
+    pointer-events: none;
+    background-repeat: repeat;
+    opacity: 0.5;
+}
+
+.estimates-body-margins.left {
+    background-image: url('HenCleaning2.png'); /* Replace with left hen pattern */
+}
+
+.estimates-body-margins.right {
+    background-image: url('HenCleaning1.png'); /* Replace with right hen pattern */
+}
+
+/* Responsive Adjustments for Hens */
+@media (min-width: 3200px) {
+    .estimates-body-margins {
+        width: 31.1%;
+    }
+    .estimates-body-margins.left {
+        left: 21px;
+        background-size: 100px auto;
+    }
+    .estimates-body-margins.right {
+        right: 21px;
+        background-size: 100px auto;
+    }
+}
+
+@media (max-width: 2299px) {
+    .estimates-body-margins {
+        display: none; /* Hide hens for smaller screens */
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .estimates-content {
+        padding: 1rem;
+    }
+    .estimates-content h1 {
+        font-size: 1.8rem;
+    }
+    .estimates-content p {
+        font-size: 0.9rem;
+    }
+    .estimate-card h2 {
+        font-size: 1.5rem;
+    }
+    .estimate-card p {
+        font-size: 0.9rem;
+    }
+    .estimate-card .price {
+        font-size: 1.1rem;
+    }
+    .welcome-hen {
+        width: 80px; /* Adjust size for smaller screens */
+    }
+}
