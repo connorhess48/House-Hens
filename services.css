@@ -48,6 +48,57 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+/* Services Content */
+.services-content {
+    max-width: 800px;
+    margin: 100px auto 50px;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.services-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #dd4632;
+}
+
+/* Service Descriptions */
+.service {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-content {
+    padding: 1.5rem;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    overflow-y: auto;
+    max-height: 50vh;
+}
+
+.service-content h2 {
+    font-size: 2rem;
+    color: #dd4632;
+}
+
+.service-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #f1f1f1;
+}
+
 /* Services Page Hen Pattern */
 .services-body-margins {
     position: fixed;
