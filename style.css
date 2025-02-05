@@ -19,7 +19,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ✅ Restored Proper Navbar Design */
+/* ✅ Fixed Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -57,11 +57,11 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ✅ Ensuring Background Image Covers the Whole Screen on Small Screens */
+/* ✅ Background Image - Covers Full Screen on Small Screens */
 .hero {
     position: relative;
     background: url('CleanHouse.jpg') no-repeat center center;
-    background-size: cover; /* Default: Covers entire screen */
+    background-size: cover; /* Default to covering the whole screen */
     background-color: black;
     color: #fff;
     text-align: center;
@@ -77,7 +77,7 @@ a:hover {
 @media (min-width: 1680px) {
     .hero {
         background-size: contain; /* Keeps the image contained */
-        max-width: 2300px; /* Adjusted to prevent shrinking */
+        max-width: 2300px; /* Prevents excessive shrinking */
         margin: 0 auto;
     }
 }
@@ -122,7 +122,7 @@ a:hover {
     color: #dd4632;
 }
 
-/* Ultra-Wide Screens (Hen Pattern Adjustments) */
+/* ✅ Hen Pattern Adjustments for Large Screens */
 @media (min-width: 3200px) {
     .body-margins {
         width: 31%;
