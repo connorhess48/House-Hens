@@ -13,13 +13,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%; /* Ensure full width on smaller screens */
 }
 
 /* Large Screens - Adjust Background with Black Margins */
 @media (min-width: 1680px) {
     .hero {
         background-size: contain; /* Keeps the image contained */
-        max-width: 90%; /* Reduce max-width to ensure it doesn't become too small */
+        max-width: 1800px; /* Ensure it's large enough but centered */
         margin: 0 auto;
     }
 }
