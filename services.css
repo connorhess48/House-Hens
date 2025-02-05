@@ -99,6 +99,23 @@ body {
     color: #f1f1f1;
 }
 
+/* Background Images for Each Service */
+#general-cleaning {
+    background-image: url('General.jpg');
+}
+
+#deluxe-detail {
+    background-image: url('WashingBaseboards.jpg');
+}
+
+#delightful-detail {
+    background-image: url('Cobwebs.jpg');
+}
+
+#window-washing {
+    background-image: url('WindowCleaning.jpg');
+}
+
 /* Services Page Hen Pattern */
 .services-body-margins {
     position: fixed;
