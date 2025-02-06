@@ -86,6 +86,7 @@ body {
 /* Footer */
 .footer-bar {
     display: flex;
+    z-index: 1; /* Place the footer on top of the hen pattern */
     justify-content: space-around;
     background-color: #111;
     color: #fff;
