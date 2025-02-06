@@ -140,13 +140,13 @@ body {
     }
 
     .services-body-margins.left {
-        left: 21px;
+        left: 0px;
         background-image: url('HenCleaning2.png');
         background-size: 80px auto;
     }
 
     .services-body-margins.right {
-        right: 21px;
+        right: 0px;
         background-image: url('HenCleaning1.png');
         background-size: 80px auto;
     }
@@ -165,13 +165,13 @@ body {
     }
 
     .services-body-margins.left {
-        left: 20px;
+        left: 0px;
         background-image: url('HenCleaning2.png');
         background-size: 90px auto;
     }
 
     .services-body-margins.right {
-        right: 20px;
+        right: 0px;
         background-image: url('HenCleaning1.png');
         background-size: 90px auto;
     }
@@ -190,13 +190,13 @@ body {
     }
 
     .services-body-margins.left {
-        left: 22px;
+        left: 0px;
         background-image: url('HenCleaning2.png');
         background-size: 100px auto;
     }
 
     .services-body-margins.right {
-        right: 22px;
+        right: 0px;
         background-image: url('HenCleaning1.png');
         background-size: 100px auto;
     }
