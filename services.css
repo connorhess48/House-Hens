@@ -153,7 +153,7 @@ body {
 }
 
 /* Large Screens (2200px - 3000px) */
-@media (min-width: 2200px) and (max-width: 3000px) {
+@media (min-width: 2200px) and (max-width: 2559px) {
     .hero {
         background-size: contain;
         max-width: 65%;
@@ -165,24 +165,15 @@ body {
     }
 }
 
-/* Ultra-Wide Screens (3000px+) */
-@media (min-width: 3000px) {
+/* Ultra-Wide Screens (3440px+ & 2560px+) */
+@media (min-width: 2560px) and (max-width: 3440px) {
     .hero {
         background-size: contain;
-        max-width: 55%;
+        max-width: 60%;
         margin: 0 auto;
     }
-
     .services-body-margins {
-        width: 31.1%;
-    }
-
-    .services-body-margins.left {
-        background-size: 100px auto;
-    }
-
-    .services-body-margins.right {
-        background-size: 100px auto;
+        width: 28%;
     }
 }
 
