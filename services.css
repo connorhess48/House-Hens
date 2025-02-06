@@ -153,7 +153,7 @@ body {
 }
 
 /* Large Screens (2200px - 3000px) */
-@media (min-width: 2200px) and (max-width: 2559px) {
+@media (min-width: 2200px) and (max-width: 2600px) {
     .hero {
         background-size: contain;
         max-width: 65%;
@@ -166,7 +166,7 @@ body {
 }
 
 /* Ultra-Wide Screens (3440px+ & 2560px+) */
-@media (min-width: 2560px) and (max-width: 3440px) {
+@media (min-width: 2601px) and (max-width: 3440px) {
     .hero {
         background-size: contain;
         max-width: 60%;
