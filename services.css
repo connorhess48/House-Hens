@@ -129,71 +129,94 @@ body {
 
 /* Medium Screens (1920px - 2200px) */
 @media (min-width: 1920px) and (max-width: 2200px) {
+    .hero {
+        background-size: contain;
+        max-width: 70%; /* Reduce margins */
+        margin: 0 auto;
+    }
+
     .services-body-margins {
-        width: 24.5%; /* Ensure consistent width */
-        background-position: top left; /* Align the pattern consistently */
-    }
-
-    .services-body-margins.left {
-        left: 21px; /* Keep consistent left margin */
-        background-image: url('HenCleaning2.png');
-        background-size: 80px auto; /* Adjust size for even repetition */
-        background-repeat: repeat; /* Ensure pattern repeats */
-        background-position: top left; /* Align hens to top-left */
-    }
-
-    .services-body-margins.right {
-        right: 21px; /* Keep consistent right margin */
-        background-image: url('HenCleaning1.png');
-        background-size: 80px auto; /* Adjust size for even repetition */
-        background-repeat: repeat; /* Ensure pattern repeats */
-        background-position: top left; /* Align hens to top-left */
-    }
-}
-
-/* Large Screens (2200px - 2600px) */
-@media (min-width: 2200px) and (max-width: 2600px) {
-    .services-body-margins {
-        width: 26%;
+        width: 24.5%;
+        background-origin: border-box; /* Aligns pattern with container */
+        background-clip: padding-box; /* Ensures the pattern clips to padding */
     }
 
     .services-body-margins.left {
         left: 21px;
         background-image: url('HenCleaning2.png');
-        background-size: 90px auto; /* Slightly larger pattern */
+        background-size: 80px auto; /* Adjust size for consistency */
         background-repeat: repeat;
-        background-position: top left;
+        background-position: center; /* Align pattern centrally */
     }
 
     .services-body-margins.right {
         right: 21px;
         background-image: url('HenCleaning1.png');
-        background-size: 90px auto; /* Slightly larger pattern */
+        background-size: 80px auto; /* Adjust size for consistency */
         background-repeat: repeat;
-        background-position: top left;
+        background-position: center; /* Align pattern centrally */
+    }
+}
+
+/* Large Screens (2200px - 2600px) */
+@media (min-width: 2200px) and (max-width: 2600px) {
+    .hero {
+        background-size: contain;
+        max-width: 65%; /* Adjusted for larger screens */
+        margin: 0 auto;
+    }
+
+    .services-body-margins {
+        width: 26%;
+        background-origin: border-box;
+        background-clip: padding-box;
+    }
+
+    .services-body-margins.left {
+        left: 21px;
+        background-image: url('HenCleaning2.png');
+        background-size: 90px auto;
+        background-repeat: repeat;
+        background-position: center;
+    }
+
+    .services-body-margins.right {
+        right: 21px;
+        background-image: url('HenCleaning1.png');
+        background-size: 90px auto;
+        background-repeat: repeat;
+        background-position: center;
     }
 }
 
 /* Ultra-Wide Screens (2601px - 3440px) */
 @media (min-width: 2601px) and (max-width: 3440px) {
+    .hero {
+        background-size: contain;
+        max-width: 64%;
+        margin: 0 auto;
+    }
+
     .services-body-margins {
         width: 28%;
+        background-origin: border-box;
+        background-clip: padding-box;
     }
 
     .services-body-margins.left {
-        left: 22px; /* Adjust for wider screens */
+        left: 22px;
         background-image: url('HenCleaning2.png');
-        background-size: 100px auto; /* Slightly larger pattern */
+        background-size: 100px auto;
         background-repeat: repeat;
-        background-position: top left;
+        background-position: center;
     }
 
     .services-body-margins.right {
-        right: 22px; /* Adjust for wider screens */
+        right: 22px;
         background-image: url('HenCleaning1.png');
-        background-size: 100px auto; /* Slightly larger pattern */
+        background-size: 100px auto;
         background-repeat: repeat;
-        background-position: top left;
+        background-position: center;
     }
 }
 
