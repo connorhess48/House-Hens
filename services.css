@@ -129,78 +129,74 @@ body {
 
 /* Medium Screens (1920px - 2200px) */
 @media (min-width: 1920px) and (max-width: 2200px) {
-    .hero {
-        background-size: contain;
-        max-width: 70%; /* Reduce margins */
-        margin: 0 auto;
-    }
-
     .services-body-margins {
-        width: 24.5%;
+        width: 24.5%; /* Ensure consistent width */
+        background-position: top left; /* Align the pattern consistently */
     }
 
     .services-body-margins.left {
-        left: 0px;
+        left: 21px; /* Keep consistent left margin */
         background-image: url('HenCleaning2.png');
-        background-size: 80px auto;
+        background-size: 80px auto; /* Adjust size for even repetition */
+        background-repeat: repeat; /* Ensure pattern repeats */
+        background-position: top left; /* Align hens to top-left */
     }
 
     .services-body-margins.right {
-        right: 0px;
+        right: 21px; /* Keep consistent right margin */
         background-image: url('HenCleaning1.png');
-        background-size: 80px auto;
+        background-size: 80px auto; /* Adjust size for even repetition */
+        background-repeat: repeat; /* Ensure pattern repeats */
+        background-position: top left; /* Align hens to top-left */
     }
 }
 
 /* Large Screens (2200px - 2600px) */
 @media (min-width: 2200px) and (max-width: 2600px) {
-    .hero {
-        background-size: contain;
-        max-width: 68%; /* Adjusted for larger screens */
-        margin: 0 auto;
-    }
-
     .services-body-margins {
         width: 26%;
     }
 
     .services-body-margins.left {
-        left: 0px;
+        left: 21px;
         background-image: url('HenCleaning2.png');
-        background-size: 90px auto;
+        background-size: 90px auto; /* Slightly larger pattern */
+        background-repeat: repeat;
+        background-position: top left;
     }
 
     .services-body-margins.right {
-        right: 0px;
+        right: 21px;
         background-image: url('HenCleaning1.png');
-        background-size: 90px auto;
+        background-size: 90px auto; /* Slightly larger pattern */
+        background-repeat: repeat;
+        background-position: top left;
     }
 }
 
 /* Ultra-Wide Screens (2601px - 3440px) */
 @media (min-width: 2601px) and (max-width: 3440px) {
-    .hero {
-        background-size: contain;
-        max-width: 64%;
-        margin: 0 auto;
-    }
-    
     .services-body-margins {
         width: 28%;
     }
 
     .services-body-margins.left {
-        left: 0px;
+        left: 22px; /* Adjust for wider screens */
         background-image: url('HenCleaning2.png');
-        background-size: 100px auto;
+        background-size: 100px auto; /* Slightly larger pattern */
+        background-repeat: repeat;
+        background-position: top left;
     }
 
     .services-body-margins.right {
-        right: 0px;
+        right: 22px; /* Adjust for wider screens */
         background-image: url('HenCleaning1.png');
-        background-size: 100px auto;
+        background-size: 100px auto; /* Slightly larger pattern */
+        background-repeat: repeat;
+        background-position: top left;
     }
 }
+
 
 /* Ensure Full Coverage for Smaller Screens */
 @media (max-width: 1919px) {
