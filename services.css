@@ -152,28 +152,53 @@ body {
     }
 }
 
-/* Large Screens (2200px - 3000px) */
+/* Large Screens (2200px - 2600px) */
 @media (min-width: 2200px) and (max-width: 2600px) {
     .hero {
         background-size: contain;
-        max-width: 65%;
+        max-width: 68%; /* Adjusted for larger screens */
         margin: 0 auto;
     }
 
     .services-body-margins {
-        width: 25%;
+        width: 26%;
+    }
+
+    .services-body-margins.left {
+        left: 20px;
+        background-image: url('HenCleaning2.png');
+        background-size: 90px auto;
+    }
+
+    .services-body-margins.right {
+        right: 20px;
+        background-image: url('HenCleaning1.png');
+        background-size: 90px auto;
     }
 }
 
-/* Ultra-Wide Screens (3440px+ & 2560px+) */
+/* Ultra-Wide Screens (2601px - 3440px) */
 @media (min-width: 2601px) and (max-width: 3440px) {
     .hero {
         background-size: contain;
-        max-width: 60%;
+        max-width: 64%;
         margin: 0 auto;
     }
+    
     .services-body-margins {
         width: 28%;
+    }
+
+    .services-body-margins.left {
+        left: 22px;
+        background-image: url('HenCleaning2.png');
+        background-size: 100px auto;
+    }
+
+    .services-body-margins.right {
+        right: 22px;
+        background-image: url('HenCleaning1.png');
+        background-size: 100px auto;
     }
 }
 
