@@ -215,8 +215,8 @@ body {
 
     .services-body-margins {
         top: 100px;
-        width: 31%;
-        background-size: 100px auto; /* Larger hens for ultra-wide screens */
+        width: 31.5%;
+        background-size: 102px auto; /* Larger hens for ultra-wide screens */
     }
 
     .services-body-margins.left {
