@@ -120,7 +120,7 @@ body {
 .services-body-margins {
     position: fixed;
     top: 80px;
-    bottom: 10px;
+    bottom: 0;
     z-index: 0;
     pointer-events: none;
     background-repeat: repeat;
@@ -137,26 +137,21 @@ body {
 
     .services-body-margins {
         width: 24.5%;
-        background-origin: border-box; /* Aligns pattern with container */
-        background-clip: padding-box; /* Ensures the pattern clips to padding */
+        background-size: 80px auto; /* Adjust pattern size */
+        background-position: top left; /* Align hens correctly */
     }
 
     .services-body-margins.left {
         left: 21px;
         background-image: url('HenCleaning2.png');
-        background-size: 80px auto; /* Adjust size for consistency */
-        background-repeat: repeat;
-        background-position: center; /* Align pattern centrally */
     }
 
     .services-body-margins.right {
         right: 21px;
         background-image: url('HenCleaning1.png');
-        background-size: 80px auto; /* Adjust size for consistency */
-        background-repeat: repeat;
-        background-position: center; /* Align pattern centrally */
     }
 }
+
 
 /* Large Screens (2200px - 2600px) */
 @media (min-width: 2200px) and (max-width: 2600px) {
@@ -168,24 +163,18 @@ body {
 
     .services-body-margins {
         width: 28%;
-        background-origin: border-box;
-        background-clip: padding-box;
+        background-size: 90px auto; /* Slightly larger pattern */
+        background-position: top left;
     }
 
     .services-body-margins.left {
         left: 21px;
         background-image: url('HenCleaning2.png');
-        background-size: 90px auto;
-        background-repeat: repeat;
-        background-position: center;
     }
 
     .services-body-margins.right {
         right: 21px;
         background-image: url('HenCleaning1.png');
-        background-size: 90px auto;
-        background-repeat: repeat;
-        background-position: center;
     }
 }
 
@@ -199,24 +188,18 @@ body {
 
     .services-body-margins {
         width: 30%;
-        background-origin: border-box;
-        background-clip: padding-box;
+        background-size: 95px auto; /* Larger hens for ultra-wide screens */
+        background-position: top left;
     }
 
     .services-body-margins.left {
         left: 22px;
         background-image: url('HenCleaning2.png');
-        background-size: 95px auto;
-        background-repeat: repeat;
-        background-position: center;
     }
 
     .services-body-margins.right {
         right: 22px;
         background-image: url('HenCleaning1.png');
-        background-size: 95px auto;
-        background-repeat: repeat;
-        background-position: center;
     }
 }
 
