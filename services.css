@@ -137,9 +137,8 @@ body {
     }
 
     .services-body-margins {
-        bottom: 10px;
         width: 24.5%;
-        background-size: 80px auto; /* Pattern size for 1920x1200 */
+        background-size: 83px auto; /* Pattern size for 1920x1200 */
         background-position: left top; /* Align pattern correctly */
     }
 
@@ -165,7 +164,7 @@ body {
     .services-body-margins {
         bottom: 50px;
         width: 24.5%;
-        background-size: 80px auto; /* Pattern size for 1920x1200 */
+        background-size: 83px auto; /* Pattern size for 1920x1200 */
         background-position: left top; /* Align pattern correctly */
     }
 
@@ -216,8 +215,8 @@ body {
 
     .services-body-margins {
         top: 100px;
-        width: 30%;
-        background-size: 97px auto; /* Larger hens for ultra-wide screens */
+        width: 31%;
+        background-size: 100px auto; /* Larger hens for ultra-wide screens */
     }
 
     .services-body-margins.left {
