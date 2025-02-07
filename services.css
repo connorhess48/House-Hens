@@ -137,7 +137,7 @@ body {
     }
 
     .services-body-margins {
-        width: 25.8%;
+        width: 26%;
         background-size: 85px auto; /* Pattern size for 1920x1200 */
         background-position: left top; /* Align pattern correctly */
     }
