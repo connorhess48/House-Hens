@@ -125,6 +125,7 @@ body {
     pointer-events: none;
     background-repeat: repeat;
     opacity: 0.5;
+    background-position: center; /* Ensures symmetry horizontally */
 }
 
 /* Medium Screens (1920px - 2200px) */
@@ -138,7 +139,7 @@ body {
     .services-body-margins {
         width: 24.5%;
         background-size: calc(80px + 2vh) auto; /* Dynamic scaling for vertical alignment */
-        background-position: left top; /* Align hens consistently */
+        background-position: center top; /* Align hens consistently */
     }
 
     .services-body-margins.left {
@@ -164,7 +165,7 @@ body {
     .services-body-margins {
         width: 28%;
         background-size: calc(90px + 2.5vh) auto; /* Dynamic scaling for consistent alignment */
-        background-position: left top; /* Align hens consistently */
+        background-position: center top; /* Align hens consistently */
     }
 
     .services-body-margins.left {
@@ -189,7 +190,7 @@ body {
     .services-body-margins {
         width: 30%;
         background-size: calc(95px + 3vh) auto; /* Dynamic scaling for ultra-wide screens */
-        background-position: left top; /* Align hens consistently */
+        background-position: center top; /* Align hens consistently */
     }
 
     .services-body-margins.left {
