@@ -137,8 +137,7 @@ body {
     }
 
     .services-body-margins {
-        top: 75px;
-        width: 24.5%;
+        width: 25.5%;
         background-size: 85px auto; /* Pattern size for 1920x1200 */
         background-position: left top; /* Align pattern correctly */
     }
@@ -164,8 +163,8 @@ body {
 
     .services-body-margins {
         bottom: 50px;
-        width: 24.5%;
-        background-size: 85px auto; /* Pattern size for 1920x1200 */
+        width: 25.5%;
+        background-size: 82px auto; /* Pattern size for 1920x1200 */
         background-position: left top; /* Align pattern correctly */
     }
 
