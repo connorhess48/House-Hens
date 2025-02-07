@@ -137,7 +137,7 @@ body {
 
     .services-body-margins {
         width: 24.5%;
-        background-size: 80px auto; /* Adjust pattern size */
+        background-size: calc(80px + 2vh) auto; /* Dynamic scaling for vertical alignment */
         background-position: left top; /* Align hens consistently */
     }
 
@@ -163,7 +163,7 @@ body {
 
     .services-body-margins {
         width: 28%;
-        background-size: 90px auto; /* Slightly larger pattern */
+        background-size: calc(90px + 2.5vh) auto; /* Dynamic scaling for consistent alignment */
         background-position: left top; /* Align hens consistently */
     }
 
@@ -188,7 +188,7 @@ body {
 
     .services-body-margins {
         width: 30%;
-        background-size: 95px auto; /* Larger hens for ultra-wide screens */
+        background-size: calc(95px + 3vh) auto; /* Dynamic scaling for ultra-wide screens */
         background-position: left top; /* Align hens consistently */
     }
 
