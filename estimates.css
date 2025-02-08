@@ -116,7 +116,7 @@
 /* Ultra-Wide Screens (2601px and above) */
 @media (min-width: 2601px) {
     .estimates-body-margins {
-        width: 31.5%; /* Further increase width */
+        width: 32.2%; /* Further increase width */
         background-size: 92px auto; /* Larger pattern for ultra-wide screens */
     }
     .estimates-body-margins.left {
