@@ -66,8 +66,8 @@
 .estimates-body-margins {
     position: fixed;
     top: 80px; /* Start below the navbar */
-    bottom: 10px; /* Stop above the footer */
-    z-index: 1;
+    bottom: 0; /* Stop above the footer */
+    z-index: 0;
     pointer-events: none;
     background-repeat: repeat;
     opacity: 0.5;
@@ -81,27 +81,60 @@
     background-image: url('HenCleaning1.png'); /* Replace with right hen pattern */
 }
 
-/* Responsive Adjustments for Hens */
-@media (min-width: 3200px) {
+/* Medium Screens (1920x1080 - 2200px) */
+@media (min-width: 1920px) and (max-width: 2200px) {
     .estimates-body-margins {
-        width: 31.1%;
+        width: 24.5%; /* Adjust width */
+        background-size: 80px auto; /* Pattern size for medium screens */
     }
     .estimates-body-margins.left {
         left: 21px;
-        background-size: 100px auto;
+        background-image: url('HenCleaning2.png');
     }
     .estimates-body-margins.right {
         right: 21px;
-        background-size: 100px auto;
+        background-image: url('HenCleaning1.png');
     }
 }
 
-@media (max-width: 2299px) {
+/* Large Screens (2201px - 2600px) */
+@media (min-width: 2201px) and (max-width: 2600px) {
     .estimates-body-margins {
-        display: none; /* Hide hens for smaller screens */
+        width: 28%; /* Increase width for larger screens */
+        background-size: 90px auto; /* Larger pattern size */
+    }
+    .estimates-body-margins.left {
+        left: 21px;
+        background-image: url('HenCleaning2.png');
+    }
+    .estimates-body-margins.right {
+        right: 21px;
+        background-image: url('HenCleaning1.png');
     }
 }
 
+/* Ultra-Wide Screens (2601px and above) */
+@media (min-width: 2601px) {
+    .estimates-body-margins {
+        width: 30%; /* Further increase width */
+        background-size: 95px auto; /* Larger pattern for ultra-wide screens */
+    }
+    .estimates-body-margins.left {
+        left: 22px;
+        background-image: url('HenCleaning2.png');
+    }
+    .estimates-body-margins.right {
+        right: 22px;
+        background-image: url('HenCleaning1.png');
+    }
+}
+
+/* Small Screens (Below 1920px) */
+@media (max-width: 1919px) {
+    .estimates-body-margins {
+        display: none; /* Hide hen pattern for smaller screens */
+    }
+}
 /* Mobile Adjustments */
 @media (max-width: 768px) {
     .estimates-content {
