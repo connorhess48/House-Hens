@@ -93,6 +93,9 @@ body {
     padding: 2rem;
     flex-wrap: wrap; /* Ensure responsiveness */
     text-align: center; /* Ensure text is centered */
+    max-width: 1200px; /* Prevent excessive stretching on ultra-wide screens */
+    margin: 0 auto; /* Centers the footer */
+    width: 100%;
 }
 
 .footer-section {
@@ -101,11 +104,33 @@ body {
     min-width: 250px; /* Prevent sections from collapsing */
 }
 
+/* Remove Bullet Points from Footer Links */
+.footer-nav-links {
+    list-style: none; /* Removes default bullet points */
+    padding: 0;
+}
+
+.footer-nav-links li {
+    margin-bottom: 0.5rem; /* Adds spacing between links */
+}
+
+.footer-nav-links a {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-nav-links a:hover {
+    color: #dd4632;
+}
+
+/* Footer Headers */
 .footer-section h3 {
     font-size: 1.5rem;
     color: #dd4632;
 }
 
+/* Footer Text & Links */
 .footer-section p, .footer-section a {
     font-size: 1rem;
     color: #fff;
