@@ -93,7 +93,6 @@ body {
     padding: 2rem;
     flex-wrap: wrap; /* Ensure responsiveness */
     text-align: center; /* Ensure text is centered */
-    max-width: 1200px; /* Prevent excessive stretching on ultra-wide screens */
     margin: 0 auto; /* Centers the footer */
     width: 100%;
 }
