@@ -87,20 +87,32 @@ body {
 .footer-bar {
     display: flex;
     z-index: 1; /* Place the footer on top of the hen pattern */
-    justify-content: space-around; /* Keep content spaced evenly */
-    align-items: center; /* Vertically align content */
-    background-color: #111; /* Footer background */
+    justify-content: center;
+    background-color: #111;
     color: #fff;
-    padding: 2rem; /* Ensure consistent height */
-    width: 100%; /* Make footer span full width */
+    padding: 2rem;
+    flex-wrap: wrap; /* Ensure responsiveness */
+    text-align: center; /* Ensure text is centered */
 }
 
 .footer-section {
     flex: 1; /* Distribute sections evenly */
     margin: 0 1rem;
-    text-align: center; /* Center-align text */
+    min-width: 250px; /* Prevent sections from collapsing */
 }
 
+/* Fix for Bullet Points in Navigation */
+.footer-section ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove extra padding */
+    margin: 0; /* Remove extra margin */
+}
+
+.footer-section ul li {
+    margin: 0.2rem 0; /* Adjust spacing between items */
+}
+
+/* General Footer Styles */
 .footer-section h3 {
     font-size: 1.5rem;
     color: #dd4632;
@@ -115,6 +127,7 @@ body {
 .footer-section a:hover {
     color: #dd4632;
 }
+
 /* Responsive Adjustments for Small Screens */
 @media (max-width: 768px) {
     .footer-bar {
