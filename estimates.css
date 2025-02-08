@@ -81,11 +81,30 @@
     background-image: url('HenCleaning1.png'); /* Replace with right hen pattern */
 }
 
-/* Medium Screens (1920x1080 - 2200px) */
-@media (min-width: 1920px) and (max-width: 2200px) {
+/* Medium Screens (1920x1080) */
+@media (min-width: 1920px) and (max-height: 1080px) {
     .estimates-body-margins {
-        width: 24.5%; /* Adjust width */
-        background-size: 80px auto; /* Pattern size for medium screens */
+        bottom:25px;
+        width: 25.5%; /* Keep width for 1920x1080 */
+        background-size: 82px auto; /* Pattern size */
+        background-position: left top; /* Align pattern correctly */
+    }
+    .estimates-body-margins.left {
+        left: 21px;
+        background-image: url('HenCleaning2.png');
+    }
+    .estimates-body-margins.right {
+        right: 21px;
+        background-image: url('HenCleaning1.png');
+    }
+}
+
+/* Medium Screens (1920x1200) */
+@media (min-width: 1920px) and (min-height: 1081px) and (max-height: 1200px) {
+    .estimates-body-margins {
+        width: 26%; /* Same width as 1920x1080 */
+        background-size: 85px auto; /* Pattern size remains consistent */
+        background-position: left top; /* Align pattern correctly */
     }
     .estimates-body-margins.left {
         left: 21px;
