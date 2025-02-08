@@ -87,11 +87,12 @@ body {
 .footer-bar {
     display: flex;
     z-index: 1; /* Place the footer on top of the hen pattern */
-    justify-content: space-around;
+    justify-content: center;
     background-color: #111;
     color: #fff;
     padding: 2rem;
     flex-wrap: wrap; /* Ensure responsiveness */
+    text-align: center; /* Ensure text is centered */
 }
 
 .footer-section {
