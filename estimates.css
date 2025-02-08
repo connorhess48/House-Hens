@@ -100,8 +100,8 @@
 /* Large Screens (2201px - 2600px) */
 @media (min-width: 2201px) and (max-width: 2600px) {
     .estimates-body-margins {
-        width: 28%; /* Increase width for larger screens */
-        background-size: 90px auto; /* Larger pattern size */
+        width: 28.5%; /* Increase width for larger screens */
+        background-size: 92px auto; /* Larger pattern size */
     }
     .estimates-body-margins.left {
         left: 21px;
@@ -116,8 +116,8 @@
 /* Ultra-Wide Screens (2601px and above) */
 @media (min-width: 2601px) {
     .estimates-body-margins {
-        width: 30%; /* Further increase width */
-        background-size: 95px auto; /* Larger pattern for ultra-wide screens */
+        width: 31.5%; /* Further increase width */
+        background-size: 97px auto; /* Larger pattern for ultra-wide screens */
     }
     .estimates-body-margins.left {
         left: 22px;
