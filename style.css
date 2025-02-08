@@ -91,6 +91,13 @@ body {
     background-color: #111;
     color: #fff;
     padding: 2rem;
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.footer-section {
+    flex: 1; /* Distribute sections evenly */
+    margin: 0 1rem;
+    min-width: 250px; /* Prevent sections from collapsing */
 }
 
 .footer-section h3 {
@@ -98,8 +105,10 @@ body {
     color: #dd4632;
 }
 
-.footer-section a {
+.footer-section p, .footer-section a {
+    font-size: 1rem;
     color: #fff;
+    margin: 0.2rem 0;
 }
 
 .footer-section a:hover {
@@ -108,19 +117,12 @@ body {
 
 /* Responsive Adjustments for Small Screens */
 @media (max-width: 768px) {
-    .navbar .logo {
-        font-size: 1.5rem;
+    .footer-bar {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .logo-image {
-        width: 40px;
-    }
-
-    .nav-links a {
-        font-size: 1.2rem;
-    }
-
-    .nav-links img {
-        width: 50px;
+    .footer-section {
+        margin-bottom: 1.5rem;
     }
 }
