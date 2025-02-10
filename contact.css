@@ -21,18 +21,25 @@
 /* Contact Heading */
 .contact-content h1 {
     font-size: 3rem;
-    margin-bottom: 2rem; /* Increased spacing to move it higher */
+    margin-bottom: 1rem; /* Decreased spacing to bring the text closer */
     color: #dd4632;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    text-decoration: underline; /* Underline for emphasis */
+    text-decoration: underline;
     text-underline-offset: 6px;
 }
 
-/* Contact Subheading */
+/* Contact Description (Text under "Contact Us") */
+.contact-description {
+    font-size: 1.2rem;
+    margin-top: 0.5rem; /* Bring it closer to "Contact Us" */
+    margin-bottom: 1.5rem; /* Add spacing before the first contact section */
+}
+
+/* Contact Subheading (County Titles) */
 .contact-subheading {
     font-size: 1.8rem;
     font-weight: bold;
-    margin-top: 1.5rem;
+    margin-top: 2rem; /* Lower the County Contact sections */
     margin-bottom: 1rem;
     color: #dd4632;
     text-decoration: underline;
