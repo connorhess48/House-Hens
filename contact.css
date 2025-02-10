@@ -21,7 +21,7 @@
 /* Contact Heading */
 .contact-content h1 {
     font-size: 3rem;
-    margin-bottom: 1.5rem; /* Increased spacing */
+    margin-bottom: 2rem; /* Increased spacing to move it higher */
     color: #dd4632;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     text-decoration: underline; /* Underline for emphasis */
@@ -41,10 +41,10 @@
 
 /* Divider Between Contact Sections */
 .contact-divider {
-    width: 60%;
+    width: 80%; /* Increased width to match the intro text */
     height: 2px;
     background-color: white; /* Can be changed to red if preferred */
-    margin: 1.5rem auto; /* Adds spacing */
+    margin: 2rem auto; /* Increased spacing */
 }
 
 /* Contact Info */
