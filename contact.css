@@ -42,15 +42,15 @@
 
 /* Move Delaware County Contact Lower */
 .delaware-contact {
-    margin-top: 4rem; /* Moves it further down */
+    margin-top: 6rem; /* Moves it further down */
 }
 
 /* Divider Between Contact Sections */
 .contact-divider {
-    width: 90%;
+    width: 100%;
     height: 2px;
     background-color: white;
-    margin: 3rem auto; /* Moves it lower */
+    margin: 65rem auto; /* Moves it lower */
 }
 
 /* Contact Subheading (County Titles) */
