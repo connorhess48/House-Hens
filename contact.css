@@ -55,6 +55,18 @@
     text-decoration: underline;
 }
 
+/* Contact Section Styling */
+.contact-section {
+    margin-bottom: 2rem; /* Adds spacing between contact sections */
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    color: #dd4632;
+    margin-bottom: 1rem;
+}
+
 /* Contact Page Hen Pattern */
 .contact-body-margins {
     position: fixed;
