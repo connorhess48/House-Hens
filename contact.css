@@ -2,34 +2,49 @@
 
 /* Contact Content */
 .contact-content {
-    flex: 1; /* Allow content to fill available space */
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2.5rem; /* Slightly increased padding for better spacing */
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 8px;
     color: #f1f1f1;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    height: calc(100vh - 80px); /* Ensures full page height minus the navbar */
+    height: calc(100vh - 80px);
 }
 
 /* Contact Heading */
 .contact-content h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem; /* Increased spacing */
     color: #dd4632;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-decoration: underline; /* Underline for emphasis */
+    text-underline-offset: 6px;
 }
 
-.contact-content p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
+/* Contact Subheading */
+.contact-subheading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: #dd4632;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* Divider Between Contact Sections */
+.contact-divider {
+    width: 60%;
+    height: 2px;
+    background-color: white; /* Can be changed to red if preferred */
+    margin: 1.5rem auto; /* Adds spacing */
 }
 
 /* Contact Info */
@@ -37,7 +52,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 1.4rem; /* Increase font size slightly for better readability */
+    font-size: 1.4rem;
 }
 
 .contact-info li {
@@ -45,36 +60,22 @@
     margin: 1rem 0;
 }
 
-/* Styling for Contact Links */
 .contact-info a {
-    color: #fff; /* White text by default */
+    color: white; /* Default white text */
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .contact-info a:hover {
-    color: #dd4632; /* Turns red on hover */
+    color: #dd4632; /* Turn red on hover */
     text-decoration: underline;
-}
-
-/* Contact Section Styling */
-.contact-section {
-    margin-bottom: 2rem; /* Adds spacing between contact sections */
-    text-align: center;
-}
-
-.contact-section h2 {
-    font-size: 2rem;
-    color: #dd4632;
-    margin-bottom: 1rem;
 }
 
 /* Contact Page Hen Pattern */
 .contact-body-margins {
     position: fixed;
-    top: 80px; /* Start below the navbar */
-    bottom: 0; /* Align with the footer */
+    top: 80px;
+    bottom: 0;
     z-index: 1;
     pointer-events: none;
     background-repeat: repeat;
@@ -82,11 +83,11 @@
 }
 
 .contact-body-margins.left {
-    background-image: url('HenCleaning2.png'); /* Left-side hen */
+    background-image: url('HenCleaning2.png');
 }
 
 .contact-body-margins.right {
-    background-image: url('HenCleaning1.png'); /* Right-side hen */
+    background-image: url('HenCleaning1.png');
 }
 
 /* Responsive Adjustments for Hens */
@@ -106,7 +107,7 @@
 
 @media (max-width: 2299px) {
     .contact-body-margins {
-        display: none; /* Hide hens for smaller screens */
+        display: none;
     }
 }
 
