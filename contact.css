@@ -45,13 +45,16 @@
     margin: 1rem 0;
 }
 
+/* Styling for Contact Links */
 .contact-info a {
-    color: #dd4632;
+    color: #fff; /* White text by default */
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .contact-info a:hover {
+    color: #dd4632; /* Turns red on hover */
     text-decoration: underline;
 }
 
