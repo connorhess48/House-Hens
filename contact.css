@@ -37,7 +37,7 @@
 
 /* Contact Sections (Delaware & Chester County) */
 .contact-section {
-    margin-top: 3rem; /* General spacing for all contact sections */
+    margin-top: 1rem; /* General spacing for all contact sections */
 }
 
 /* Move Delaware County Contact Lower */
@@ -50,7 +50,7 @@
     width: 100%;
     height: 2px;
     background-color: white;
-    margin: 6rem auto; /* Moves it lower */
+    margin: 3rem auto; /* Moves it lower */
 }
 
 /* Contact Subheading (County Titles) */
