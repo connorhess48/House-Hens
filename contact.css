@@ -9,7 +9,7 @@
     align-items: center;
     max-width: 800px;
     margin: 0 auto;
-    padding: 2.5rem;
+    padding: 3rem; /* Slightly increased padding */
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 8px;
@@ -21,7 +21,8 @@
 /* Contact Heading */
 .contact-content h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-top: 1.5rem; /* Moves it slightly lower */
+    margin-bottom: 1.5rem; /* Keeps spacing with description */
     color: #dd4632;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     text-decoration: underline;
@@ -31,26 +32,25 @@
 /* Contact Description (Text under "Contact Us") */
 .contact-description {
     font-size: 1.2rem;
-    margin-top: 0.5rem; /* Keeps it close to "Contact Us" */
-    margin-bottom: 1.5rem; /* Adds spacing before the contacts */
+    margin-bottom: 2rem; /* Moves text slightly lower */
 }
 
 /* Contact Sections (Delaware & Chester County) */
 .contact-section {
-    margin-top: 1rem; /* General spacing for all contact sections */
+    margin-top: 3.5rem; /* General spacing for all contact sections */
 }
 
 /* Move Delaware County Contact Lower */
 .delaware-contact {
-    margin-top: 6rem; /* Moves it further down */
+    margin-top: 5rem; /* Moves it further down */
 }
 
 /* Divider Between Contact Sections */
 .contact-divider {
-    width: 100%;
+    width: 80%;
     height: 2px;
     background-color: white;
-    margin: 3rem auto; /* Moves it lower */
+    margin: 4rem auto; /* Moves it lower */
 }
 
 /* Contact Subheading (County Titles) */
@@ -113,11 +113,11 @@
     }
     .contact-body-margins.left {
         left: 21px;
-        background-size: 98px auto;
+        background-size: 100px auto;
     }
     .contact-body-margins.right {
         right: 21px;
-        background-size: 98px auto;
+        background-size: 100px auto;
     }
 }
 
@@ -146,4 +146,3 @@
         font-size: 1rem;
     }
 }
-
