@@ -9,7 +9,7 @@
     align-items: center;
     max-width: 800px;
     margin: 0 auto;
-    padding: 6rem 2rem; /* Moves everything lower */
+    padding: 2.5rem; /* Keep padding similar to before */
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 8px;
@@ -21,46 +21,41 @@
 /* Contact Heading */
 .contact-content h1 {
     font-size: 3rem;
-    margin-top: 5rem; /* Moves "Contact Us" text LOWER */
-    margin-bottom: 3rem; /* Adds proper spacing */
+    margin-bottom: 1.8rem; /* Lowered "Contact Us" for balance */
     color: #dd4632;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     text-decoration: underline;
     text-underline-offset: 6px;
 }
 
-/* Contact Description (Text under "Contact Us") */
-.contact-description {
+/* Contact Description */
+.contact-content p {
     font-size: 1.2rem;
-    margin-bottom: 4rem; /* Moves text slightly lower */
+    margin-bottom: 2.2rem; /* Moved text closer to "Contact Us" */
+    line-height: 1.8;
 }
 
-/* Contact Sections (Delaware & Chester County) */
+/* Contact Section */
 .contact-section {
-    margin-top: 7rem; /* Moves all contact sections LOWER */
+    margin-top: 3rem; /* Moves Delaware County Contact lower */
 }
 
-/* Move Delaware County Contact LOWER */
-.delaware-contact {
-    margin-top: 10rem; /* Moves it significantly lower */
-}
-
-/* Divider Between Contact Sections */
-.contact-divider {
-    width: 80%;
-    height: 2px;
-    background-color: white;
-    margin: 9rem auto; /* Moves it even LOWER */
-}
-
-/* Contact Subheading (County Titles) */
-.contact-subheading {
+/* Contact Subheading */
+.contact-section h2 {
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 1rem;
     color: #dd4632;
     text-decoration: underline;
     text-underline-offset: 5px;
+}
+
+/* Divider Between Contact Sections */
+.contact-divider {
+    width: 75%; /* Made divider line wider */
+    height: 2px;
+    background-color: white;
+    margin: 2.5rem auto; /* Lowered white divider */
 }
 
 /* Contact Info */
@@ -76,14 +71,15 @@
     margin: 1rem 0;
 }
 
+/* Contact Info Links */
 .contact-info a {
-    color: white; /* Default white text */
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
 .contact-info a:hover {
-    color: #dd4632; /* Turns red on hover */
+    color: #dd4632;
     text-decoration: underline;
 }
 
@@ -131,7 +127,7 @@
 @media (max-width: 768px) {
     .contact-content {
         max-width: 90%;
-        padding: 2rem;
+        padding: 1.5rem;
     }
     .contact-content h1 {
         font-size: 2.2rem;
@@ -146,3 +142,4 @@
         font-size: 1rem;
     }
 }
+
