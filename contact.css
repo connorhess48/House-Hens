@@ -35,15 +35,17 @@
     line-height: 1.8;
 }
 
-/* Contact Subheading */
-.contact-section h2 {
+/* Contact Subheading (Applies to both counties now) */
+.delaware-contact h2, 
+.chester-contact h2 {
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    color: #dd4632;
+    color: #dd4632; /* This makes it red */
     text-decoration: underline;
     text-underline-offset: 5px;
 }
+
 
 /* Divider Between Contact Sections */
 .contact-divider {
