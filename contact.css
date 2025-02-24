@@ -148,6 +148,13 @@
     }
 }
 
+/* Mid-Sized Screens (1680px and below) */
+@media (max-width: 1680px) {
+    .contact-content {
+        margin-top: 5rem; /* Moves content lower to prevent cut-off */
+    }
+}
+
 /* Large Screens (2201px - 2600px) */
 @media (min-width: 2201px) and (max-width: 2600px) {
     .contact-body-margins {
@@ -187,14 +194,16 @@
     }
 }
 
-/* Mobile Adjustments */
+/* Mobile Adjustments (768px and below) */
 @media (max-width: 768px) {
     .contact-content {
         max-width: 90%;
         padding: 1.5rem;
+        margin-top: 6rem; /* Further pushes down on very small screens */
     }
     .contact-content h1 {
         font-size: 2.2rem;
+        margin-top: 1rem; /* Ensures heading has enough spacing */
     }
     .contact-content p {
         font-size: 1rem;
