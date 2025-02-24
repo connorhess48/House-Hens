@@ -119,9 +119,8 @@
 /* Medium Screens (1920x1080) */
 @media (min-width: 1920px) and (max-height: 1080px) {
     .contact-body-margins {
-        width: 25.5%;
+        width: 26.5%;
         background-size: 85px auto;
-        background-position: left top;
     }
     .contact-body-margins.left {
         left: 21px;
@@ -136,9 +135,8 @@
 /* Medium Screens (1920x1200) */
 @media (min-width: 1920px) and (min-height: 1081px) and (max-height: 1200px) {
     .contact-body-margins {
-        width: 26%;
+        width: 27%;
         background-size: 89px auto;
-        background-position: left top;
     }
     .contact-body-margins.left {
         left: 21px;
