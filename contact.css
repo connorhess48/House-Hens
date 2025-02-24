@@ -154,8 +154,8 @@
 /* Large Screens (2201px - 2600px) */
 @media (min-width: 2201px) and (max-width: 2600px) {
     .contact-body-margins {
-        width: 29.5%;
-        background-size: 92px auto;
+        width: 28.5%;
+        background-size: 95px auto;
     }
     .contact-body-margins.left {
         left: 21px;
