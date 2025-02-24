@@ -59,9 +59,10 @@
 }
 
 /* Chester County Contact - Moves it higher */
- .contact-chester {
-    margin-top: -5rem; /* Moves Chester County Contact UP slightly */
-} 
+.contact-chester {
+    margin-top: -3rem; /* Move it up slightly */
+    padding-bottom: 1rem; /* Prevents overlap */
+}
 
 /* Contact Info */
 .contact-info {
