@@ -35,11 +35,6 @@
     line-height: 1.8;
 }
 
-/* Contact Section */
-.contact-section {
-    margin-top: 3rem; /* Keeps Delaware County Contact in place */
-}
-
 /* Contact Subheading */
 .contact-section h2 {
     font-size: 1.8rem;
@@ -58,12 +53,15 @@
     margin: 2.5rem auto;
 }
 
-/* Chester County Contact - Moves it higher */
-.contact-chester {
-    margin-top: -3rem; /* Move it up slightly */
-    padding-bottom: 1rem; /* Prevents overlap */
+/* Move Delaware County Contact Down */
+.delaware-contact {
+    margin-top: 3rem;
 }
 
+/* Move Chester County Contact Up */
+.chester-contact {
+    margin-top: 0.1rem; /* Adjust this as needed */
+}
 /* Contact Info */
 .contact-info {
     list-style: none;
