@@ -167,18 +167,18 @@
     }
 }
 
-/* Ultra-Wide Screens (2601px and above) */
+/* ✅ Ultra-Wide Screens (2601px and above - Restored to Original) */
 @media (min-width: 2601px) {
     .contact-body-margins {
-        width: 32.2%;
-        background-size: 92px auto;
+        width: 31%; /* 🔥 Restored to match what worked for your screen! */
+        background-size: 98px auto; /* Same pattern as before */
     }
     .contact-body-margins.left {
-        left: 22px;
+        left: 21px;
         background-image: url('HenCleaning2.png');
     }
     .contact-body-margins.right {
-        right: 22px;
+        right: 21px;
         background-image: url('HenCleaning1.png');
     }
 }
