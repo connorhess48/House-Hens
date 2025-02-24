@@ -52,7 +52,7 @@
     width: 75%;
     height: 2px;
     background-color: white;
-    margin: 2.5rem auto;
+    margin: 4rem auto;
 }
 
 /* Move Delaware County Contact Down */
@@ -62,7 +62,7 @@
 
 /* Move Chester County Contact Up */
 .chester-contact {
-    margin-top: 0.1rem; /* Adjust this as needed */
+    margin-top: 0rem; /* Adjust this as needed */
 }
 /* Contact Info */
 .contact-info {
