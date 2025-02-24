@@ -36,7 +36,10 @@
 }
 
 /* Contact Subheading (Applies to both counties now) */
-.delaware-contact h2, 
+.delaware-contact h2
+{
+    margin-bottom: 2rem;
+}, 
 .chester-contact h2 {
     font-size: 1.8rem;
     font-weight: bold;
@@ -52,12 +55,12 @@
     width: 75%;
     height: 2px;
     background-color: white;
-    margin: 1.5rem auto;
+    margin: 2.5rem auto;
 }
 
 /* Move Delaware County Contact Down */
 .delaware-contact {
-    margin-top: 8rem;
+    margin-top: 0rem;
 }
 
 /* Move Chester County Contact Up */
