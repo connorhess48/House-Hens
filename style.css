@@ -93,23 +93,29 @@ body {
     padding: 2rem;
     flex-wrap: wrap; /* Ensure responsiveness */
     text-align: center; /* Ensure text is centered */
+    height: 180px; /* Lock the height to prevent shifting */
+    align-items: center; /* Ensure content stays centered */
 }
 
+/* Footer Sections */
 .footer-section {
     flex: 1; /* Distribute sections evenly */
     margin: 0 1rem;
     min-width: 250px; /* Prevent sections from collapsing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Keep text centered within section */
 }
 
 /* Fix for Bullet Points in Navigation */
 .footer-section ul {
     list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove extra padding */
-    margin: 0; /* Remove extra margin */
+    padding: 0;
+    margin: 0;
 }
 
 .footer-section ul li {
-    margin: 0.2rem 0; /* Adjust spacing between items */
+    margin: 0.3rem 0; /* Increase spacing slightly */
 }
 
 /* General Footer Styles */
@@ -119,9 +125,15 @@ body {
 }
 
 .footer-section p, .footer-section a {
-    font-size: 1rem; /* Slightly larger font */
+    font-size: 1.2rem; /* Slightly larger text */
     color: #fff;
-    margin: 0.2rem 0; /* Slightly increased spacing */
+    margin: 0.3rem 0; /* More spacing between text */
+}
+
+/* Keep Footer Text Inside Fixed Height */
+.footer-section p,
+.footer-section a {
+    line-height: 1.6; /* Improve readability */
 }
 
 .footer-section a:hover {
@@ -134,6 +146,8 @@ body {
     .footer-bar {
         flex-direction: column;
         align-items: center;
+        height: auto; /* Allow flexibility on smaller screens */
+        padding: 2rem 0;
     }
 
     .footer-section {
