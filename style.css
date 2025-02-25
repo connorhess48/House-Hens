@@ -121,7 +121,7 @@ body {
 .footer-section p, .footer-section a {
     font-size: 1.2rem; /* Slightly larger font */
     color: #fff;
-    margin: 0.4rem 0; /* Slightly increased spacing */
+    margin: 0.2rem 0; /* Slightly increased spacing */
 }
 
 .footer-section a:hover {
