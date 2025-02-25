@@ -109,21 +109,19 @@ body {
 }
 
 .footer-section ul li {
-    margin: 0.4rem 0; /* Adjust spacing between items */
+    margin: 0.2rem 0; /* Adjust spacing between items */
 }
 
 /* General Footer Styles */
 .footer-section h3 {
     font-size: 1.5rem;
     color: #dd4632;
-    margin-bottom: 0.5rem; /* Keep header spacing the same */
 }
 
 .footer-section p, .footer-section a {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #fff;
     margin: 0.2rem 0;
-    line-height: 1.6; /* Add spacing between lines */
 }
 
 .footer-section a:hover {
