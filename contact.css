@@ -118,6 +118,9 @@
 
 /* Medium Screens (1920x1080) */
 @media (min-width: 1920px) and (max-height: 1080px) {
+    .contact-content {
+        margin-top: 5rem; /* Moves content lower to prevent cut-off */
+    }
     .contact-body-margins {
         width: 25.5%;
         background-size: 82px auto;
@@ -151,7 +154,7 @@
 /* Mid-Sized Screens (1680px and below) */
 @media (max-width: 1680px) {
     .contact-content {
-        margin-top: 5rem; /* Moves content lower to prevent cut-off */
+        margin-top: 3rem; /* Moves content lower to prevent cut-off */
     }
 }
 
