@@ -189,9 +189,8 @@ body {
     }
 
     .services-body-margins {
-        top: 90px;
-        width: 28%;
-        background-size: 90px auto; /* Slightly larger pattern */
+        width: 28.5%;
+        background-size: 92px auto; /* Slightly larger pattern */
     }
 
     .services-body-margins.left {
