@@ -151,6 +151,15 @@ body {
         width: 40px; /* Reduce the size of the hen logo */
         height: auto;
     }
+
+    .nav-links a {
+        font-size: 1.3rem;
+}
+
+    .nav-links img {
+        width: 55px;
+        height: auto;
+    }
 }
 
 @media (max-width: 414px) {
