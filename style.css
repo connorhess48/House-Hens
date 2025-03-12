@@ -140,3 +140,25 @@ body {
         margin-bottom: 1.5rem;
     }
 }
+
+/* Adjust Header Logo and Text Size on Small Screens */
+@media (max-width: 460px) {
+    .navbar .logo {
+        font-size: 1.6rem; /* Reduce text size for "House Hens" */
+    }
+
+    .logo-image {
+        width: 40px; /* Reduce the size of the hen logo */
+        height: auto;
+    }
+}
+
+@media (max-width: 414px) {
+    .navbar .logo {
+        font-size: 1.4rem; /* Even smaller for compact phones */
+    }
+
+    .logo-image {
+        width: 35px; /* Reduce hen logo further */
+    }
+}
