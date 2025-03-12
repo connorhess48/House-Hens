@@ -161,4 +161,32 @@ body {
     .logo-image {
         width: 35px; /* Reduce hen logo further */
     }
+
+    .nav-links a {
+        font-size: 1.1rem; /* Reduce text size */
+    }
+
+    .nav-links img {
+        width: 45px; /* Shrink icons */
+        height: auto;
+    }    
+}
+
+@media (max-width: 375px) {
+
+    .navbar .logo {
+        font-size: 1.3rem; /* Even smaller for compact phones */
+    }
+
+    .logo-image {
+        width: 30px; /* Reduce hen logo further */
+    }
+
+    .nav-links a {
+        font-size: .8rem; /* Even smaller text for compact phones */
+    }
+
+    .nav-links img {
+        width: 40px; /* Reduce icon size further */
+    }
 }
