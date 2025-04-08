@@ -147,7 +147,7 @@ body {
 /* Adjust Header Logo and Text Size on Small Screens */
 @media (max-width: 460px) {
     .nav-links {
-        padding-right: 2rem;
+        padding-right: 1rem;
     }
     .navbar .logo {
         font-size: 1.6rem; /* Reduce text size for "House Hens" */
