@@ -171,7 +171,7 @@ body {
 
 @media (max-width: 414px) {
     .nav-links {
-        padding-right: 1rem;
+        padding-right: 1.3rem;
     }
     .navbar .logo {
         font-size: 1.4rem; /* Even smaller for compact phones */
@@ -194,7 +194,7 @@ body {
 
 @media (max-width: 375px) {
     .nav-links {
-        padding-right: 1rem;
+        padding-right: 1.3rem;
     }
     .navbar .logo {
         font-size: 1.3rem; /* Even smaller for compact phones */
