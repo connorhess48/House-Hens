@@ -139,10 +139,16 @@ body {
     .footer-section {
         margin-bottom: 1.5rem;
     }
+    .nav-links {
+        padding-right: 1.5rem;
+    }
 }
 
 /* Adjust Header Logo and Text Size on Small Screens */
 @media (max-width: 460px) {
+    .nav-links {
+        padding-right: 2rem;
+    }
     .navbar .logo {
         font-size: 1.6rem; /* Reduce text size for "House Hens" */
     }
@@ -164,6 +170,9 @@ body {
 }
 
 @media (max-width: 414px) {
+    .nav-links {
+        padding-right: 2.5rem;
+    }
     .navbar .logo {
         font-size: 1.4rem; /* Even smaller for compact phones */
     }
@@ -184,6 +193,9 @@ body {
 }
 
 @media (max-width: 375px) {
+    .nav-links {
+        padding-right: 3rem;
+    }
     .navbar .logo {
         font-size: 1.3rem; /* Even smaller for compact phones */
     }
