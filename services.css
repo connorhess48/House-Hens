@@ -1,20 +1,16 @@
-/* Services Page-Specific Styles */
-
-/* Body Background Fix */
 body {
-    background-color: black; /* Ensure visibility */
+    background-color: black; 
 }
 
-/* Hero Section */
 .hero {
     position: relative;
     background: url('CleanHouse.jpg') no-repeat center center;
-    background-size: cover; /* Default full-screen coverage */
+    background-size: cover;
     background-color: black;
     color: #fff;
     text-align: center;
     height: 80vh;
-    min-height: 80vh; /* Ensures height on all screens */
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +18,6 @@ body {
     width: 100%;
 }
 
-/* Hero Overlay */
 .hero::before {
     content: '';
     position: absolute;
@@ -34,14 +29,12 @@ body {
     z-index: 1;
 }
 
-/* Ensure Hero Content is Visible */
 .hero-content {
     position: relative;
     z-index: 2;
     padding: 20px;
 }
 
-/* Fix Hero Title Visibility */
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -62,7 +55,6 @@ body {
     color: #dd4632;
 }
 
-/* Service Descriptions */
 .service {
     background-size: cover;
     background-position: center;
@@ -99,7 +91,6 @@ body {
     color: #f1f1f1;
 }
 
-/* Background Images for Each Service */
 #general-cleaning {
     background-image: url('General.jpg');
 }
@@ -116,7 +107,7 @@ body {
     background-image: url('WindowCleaning.jpg');
 }
 
-/* Services Page Hen Pattern */
+/* Services Hen Pattern */
 .services-body-margins {
     position: fixed;
     top: 80px;
@@ -125,21 +116,20 @@ body {
     pointer-events: none;
     background-repeat: repeat;
     opacity: 0.5;
-    background-position: left top; /* Ensures symmetry horizontally */
+    background-position: left top; 
 }
 
-/* 1920x1200 Screen Configuration */
 @media (min-width: 1920px) and (min-height: 1150px) {
     .hero {
         background-size: contain;
-        max-width: 70%; /* Reduce margins */
+        max-width: 70%; 
         margin: 0 auto;
     }
 
     .services-body-margins {
         width: 26%;
-        background-size: 85px auto; /* Pattern size for 1920x1200 */
-        background-position: left top; /* Align pattern correctly */
+        background-size: 85px auto; 
+        background-position: left top; 
     }
 
     .services-body-margins.left {
@@ -153,19 +143,18 @@ body {
     }
 }
 
-/* 1920x1200 Screen Configuration */
 @media (min-width: 1920px) and (max-height: 1150px) {
     .hero {
         background-size: contain;
-        max-width: 70%; /* Reduce margins */
+        max-width: 70%; 
         margin: 0 auto;
     }
 
     .services-body-margins {
         bottom: 25px;
         width: 25.5%;
-        background-size: 82px auto; /* Pattern size for 1920x1200 */
-        background-position: left top; /* Align pattern correctly */
+        background-size: 82px auto; 
+        background-position: left top; 
     }
 
     .services-body-margins.left {
@@ -179,18 +168,16 @@ body {
     }
 }
 
-
-/* Large Screens (2200px - 2600px) */
 @media (min-width: 2200px) and (max-width: 2600px) {
     .hero {
         background-size: contain;
-        max-width: 65%; /* Adjusted for larger screens */
+        max-width: 65%; 
         margin: 0 auto;
     }
 
     .services-body-margins {
         width: 28.5%;
-        background-size: 92px auto; /* Slightly larger pattern */
+        background-size: 92px auto; 
     }
 
     .services-body-margins.left {
@@ -204,7 +191,6 @@ body {
     }
 }
 
-/* Ultra-Wide Screens (2601px - 3440px) */
 @media (min-width: 2601px) and (max-width: 3440px) {
     .hero {
         background-size: contain;
@@ -215,7 +201,7 @@ body {
     .services-body-margins {
         top: 100px;
         width: 31.9%;
-        background-size: 101px auto; /* Larger hens for ultra-wide screens */
+        background-size: 101px auto;
     }
 
     .services-body-margins.left {
@@ -229,17 +215,14 @@ body {
     }
 }
 
-
-/* Ensure Full Coverage for Smaller Screens */
 @media (max-width: 1919px) {
     .hero {
         background-size: cover;
         width: 100%;
-        min-height: 80vh; /* Ensures it doesn't collapse */
+        min-height: 80vh;
     }
 }
 
-/* Small Screens - Hide Hen Pattern */
 @media (max-width: 1680px) {
     .services-body-margins {
         display: none;
